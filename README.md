@@ -8,6 +8,4 @@
 - 📫 How to reach me: https://www.linkedin.com/in/ricojonathan/
 - ⚡ Fun fact: My dog's name is Ein like in Cowboy Bebop
 
-[![NathanRedblur's GitHub stats](https://github-readme-stats.vercel.app/api?username=nathanredblur)](https://github.com/anuraghazra/github-readme-stats)
-
 ![NathanRedblur's GitHub stats](https://github-readme-stats.vercel.app/api?username=nathanredblur&count_private=true&show_icons=true)
