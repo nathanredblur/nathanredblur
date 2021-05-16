@@ -1,6 +1,6 @@
 ### Hi there, I'm Nathan Rich 👋
 
-<a href="https://twitter.com/NathanRedBlur">Twitter</a> <a href="https://www.linkedin.com/in/ricojonathan/">Linkedin</a>
+<a href="https://twitter.com/NathanRedBlur">Twitter</a> | <a href="https://www.linkedin.com/in/ricojonathan/">Linkedin</a> | <a href="https://angel.co/u/nathanredblur">AngelList</a>
 
 
 
