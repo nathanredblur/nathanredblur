@@ -1,6 +1,8 @@
 ### Hi there, I'm Nathan Rich 👋
 
-<a href="https://twitter.com/NathanRedBlur">Twitter</a> | <a href="https://www.linkedin.com/in/ricojonathan/">Linkedin</a> | <a href="https://angel.co/u/nathanredblur">AngelList</a>
+[![Twitter Follow](https://img.shields.io/badge/twitter--green?logo=twitter&style=social)](https://twitter.com/NathanRedBlur)
+[![Linkedin Follow](https://img.shields.io/badge/linkedin--green?logo=linkedin&style=social)](https://www.linkedin.com/in/ricojonathan/)
+[![AngelList Follow](https://img.shields.io/badge/AngelList--green?logo=AngelList&style=social)](https://angel.co/u/nathanredblur)
 
 I'm a passionate FrontEnd developer living in Medellín, Colombia. Currently working with some of the greatest tools and frameworks out there.
 
