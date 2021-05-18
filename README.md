@@ -30,8 +30,9 @@ I'm a passionate FrontEnd developer living in Medellín, Colombia. Currently wor
 ![vsCode](https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)
 ![AdobeXD](https://img.shields.io/badge/Adobe%20XD-FF61F6?style=for-the-badge&logo=Adobe%20XD&logoColor=white)
 ![Sketch](https://img.shields.io/badge/Sketch-F7B500?style=for-the-badge&logo=Sketch&logoColor=white)
-![]()
-![]()
+
+
+![Tech Skills ](https://cr-skills-chart-widget.azurewebsites.net/api/api?username=nathanredblur)
 
 - Node.js, Express - 7 years
 - React, Redux, FramerMotion - 2 years
