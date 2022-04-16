@@ -4,6 +4,8 @@
 [![Linkedin Follow](https://img.shields.io/badge/linkedin--green?logo=linkedin&style=social)](https://www.linkedin.com/in/ricojonathan/)
 [![AngelList Follow](https://img.shields.io/badge/AngelList--green?logo=AngelList&style=social)](https://angel.co/u/nathanredblur)
 
+![](https://komarev.com/ghpvc/?username=nathanredblur)
+
 I'm a passionate FrontEnd developer living in Medellín, Colombia. Currently working with some of the greatest tools and frameworks out there. 
 
 - 🔭 I’m currently working like FrontEnd on AllTheRooms.com
