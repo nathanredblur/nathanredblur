@@ -1,10 +1,24 @@
-### Hi there, I'm Nathan Rich 👋
+<div id="head">
+  <img src="https://media4.giphy.com/media/Gi8ilHwjq6kcU/giphy.gif?cid=790b7611eb5ec2968647e8614a140bf1a1b6122a86062cf2&rid=giphy.gif&ct=g" 
+       width="200" align="left" />
+  <h1>Hi there, I'm Nathan Rich 👋</h1>
+  
+  <div id="badges">
+    <a href="https://twitter.com/NathanRedBlur">
+      <img src="https://img.shields.io/badge/twitter--green?logo=twitter&style=social" alt="Twitter Follow"/>
+    </a>
+    <a href="https://www.linkedin.com/in/ricojonathan/L">
+      <img src="https://img.shields.io/badge/linkedin--green?logo=linkedin&style=social" alt="Linkedin Follow"/>
+    </a>
+    <a href="https://angel.co/u/nathanredblur">
+      <img src="https://img.shields.io/badge/AngelList--green?logo=AngelList&style=social" alt="AngelList Follow"/>
+    </a>
+    <img src="https://komarev.com/ghpvc/?username=nathanredblur&color=blueviolet" />
+  </div>
 
-[![Twitter Follow](https://img.shields.io/badge/twitter--green?logo=twitter&style=social)](https://twitter.com/NathanRedBlur)
-[![Linkedin Follow](https://img.shields.io/badge/linkedin--green?logo=linkedin&style=social)](https://www.linkedin.com/in/ricojonathan/)
-[![AngelList Follow](https://img.shields.io/badge/AngelList--green?logo=AngelList&style=social)](https://angel.co/u/nathanredblur)
-
-![](https://komarev.com/ghpvc/?username=nathanredblur&color=blueviolet)
+  <br clear="left"/>
+</div>
+<br />
 
 I'm a passionate FrontEnd developer living in Medellín, Colombia. Currently working with some of the greatest tools and frameworks out there. 
 
@@ -14,10 +28,14 @@ I'm a passionate FrontEnd developer living in Medellín, Colombia. Currently wor
 - 🤔 I’m looking for help with understand option market shares
 - 💬 Ask me about anything related to Front-end
 - 📫 How to reach me: https://www.linkedin.com/in/ricojonathan/
-- ⚡ Fun fact: My dog's name is Ein like in Cowboy Bebop
+- ⚡ Fun fact: My dog's name is Ein like in Cowboy Bebop 🦮
 
 
 ## Web development:
+
+<img src="https://media1.giphy.com/media/kz6cm1kKle2MYkHtJF/giphy.gif?cid=790b76114fc4ac86c48327b37edba6dc8a3b30d8224433c6&rid=giphy.gif&ct=g" 
+     width="200" align="left"/>
+
 ![Next.js](https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)
 ![React.JS](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![GraphQL](https://img.shields.io/badge/GraphQl-E10098?style=for-the-badge&logo=graphql&logoColor=white)
@@ -33,6 +51,7 @@ I'm a passionate FrontEnd developer living in Medellín, Colombia. Currently wor
 ![AdobeXD](https://img.shields.io/badge/Adobe%20XD-FF61F6?style=for-the-badge&logo=Adobe%20XD&logoColor=white)
 ![Sketch](https://img.shields.io/badge/Sketch-F7B500?style=for-the-badge&logo=Sketch&logoColor=white)
 
+<br clear="left"/>
 
 ![Tech Skills ](https://cr-skills-chart-widget.azurewebsites.net/api/api?username=nathanredblur)
 
@@ -49,4 +68,4 @@ And more everyday...
 
 ![NathanRedblur's GitHub stats](https://github-readme-stats.vercel.app/api?username=nathanredblur&count_private=true&show_icons=true) ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=nathanredblur&layout=compact) 
   
-     
+
