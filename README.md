@@ -50,6 +50,7 @@ I'm a passionate FrontEnd developer living in Medellín, Colombia. Currently wor
 ![vsCode](https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)
 ![AdobeXD](https://img.shields.io/badge/Adobe%20XD-FF61F6?style=for-the-badge&logo=Adobe%20XD&logoColor=white)
 ![Sketch](https://img.shields.io/badge/Sketch-F7B500?style=for-the-badge&logo=Sketch&logoColor=white)
+![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
 
 <br clear="left"/>
 
@@ -60,6 +61,7 @@ I'm a passionate FrontEnd developer living in Medellín, Colombia. Currently wor
 - Typescript, GraphQL, NextJS, Apollo Client - 2 years
 - Angular, scss, webpack - 5 years
 - Jest, Storybook, Cypress
+- Figma, AdobeXD, Sketch
 
 Learning:
 - Serverless, Rust, React Native
