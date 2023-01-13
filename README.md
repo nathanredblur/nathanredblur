@@ -70,4 +70,4 @@ And more everyday...
 
 ![NathanRedblur's GitHub stats](https://github-readme-stats-kw8r-nathanredblur.vercel.app/api?username=nathanredblur&count_private=true&show_icons=true) ![Top Langs](https://github-readme-stats-kw8r-nathanredblur.vercel.app/api/top-langs/?username=nathanredblur&layout=compact) 
   
-
+<!--START_SECTION:activity-->
