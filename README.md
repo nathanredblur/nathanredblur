@@ -71,3 +71,9 @@ And more everyday...
 ![NathanRedblur's GitHub stats](https://github-readme-stats-kw8r-nathanredblur.vercel.app/api?username=nathanredblur&count_private=true&show_icons=true) ![Top Langs](https://github-readme-stats-kw8r-nathanredblur.vercel.app/api/top-langs/?username=nathanredblur&layout=compact) 
   
 <!--START_SECTION:activity-->
+1. 🗣 Commented on [#2402](https://github.com/anuraghazra/github-readme-stats/issues/2402) in [anuraghazra/github-readme-stats](https://github.com/anuraghazra/github-readme-stats)
+2. ❗️ Opened issue [#43](https://github.com/storybookjs/addon-postcss/issues/43) in [storybookjs/addon-postcss](https://github.com/storybookjs/addon-postcss)
+3. 🗣 Commented on [#1005](https://github.com/callstack/linaria/issues/1005) in [callstack/linaria](https://github.com/callstack/linaria)
+4. 🗣 Commented on [#1005](https://github.com/callstack/linaria/issues/1005) in [callstack/linaria](https://github.com/callstack/linaria)
+5. 🗣 Commented on [#1112](https://github.com/callstack/linaria/issues/1112) in [callstack/linaria](https://github.com/callstack/linaria)
+<!--END_SECTION:activity-->
