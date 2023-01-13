@@ -68,6 +68,6 @@ Learning:
 And more everyday...
 
 
-![NathanRedblur's GitHub stats](https://github-readme-stats.vercel.app/api?username=nathanredblur&count_private=true&show_icons=true) ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=nathanredblur&layout=compact) 
+![NathanRedblur's GitHub stats](https://github-readme-stats-three-pied-71.vercel.app/api?username=nathanredblur&count_private=true&show_icons=true) ![Top Langs](https://github-readme-stats-three-pied-71.vercel.app/api/top-langs/?username=nathanredblur&layout=compact) 
   
 
