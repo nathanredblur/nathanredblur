@@ -1,7 +1,11 @@
-<div id="head">
-  <img src="https://media4.giphy.com/media/Gi8ilHwjq6kcU/giphy.gif?cid=790b7611eb5ec2968647e8614a140bf1a1b6122a86062cf2&rid=giphy.gif&ct=g" 
+
+<img src="https://media4.giphy.com/media/Gi8ilHwjq6kcU/giphy.gif?cid=790b7611eb5ec2968647e8614a140bf1a1b6122a86062cf2&rid=giphy.gif&ct=g" 
        width="200" align="left" />
+
+<div id="head">
+  
   <h1>Hi there, I'm Nathan Rich 👋</h1>
+  <img align="right" width="150" alt="🦑" src="https://count.getloli.com/get/@:nathanredblur?theme=rule34">
   
   <div id="badges">
     <a href="https://twitter.com/NathanRedBlur">
@@ -15,8 +19,6 @@
     </a>
     <img src="https://komarev.com/ghpvc/?username=nathanredblur&color=blueviolet" />
   </div>
-  
-  [<img align="right" width="150" alt="🦑" src="https://count.getloli.com/get/@:nathanredblur?theme=rule34">](https://www.youtube.com/watch?v=PqXPW0oBKgg)
 
   <br clear="left"/>
 </div>
@@ -59,6 +61,10 @@ I'm a passionate FrontEnd developer living in Medellín, Colombia. Currently wor
 [<img align="left" width="390" alt="🦑" src="https://gist.githubusercontent.com/nathanredblur/3fc94c8920887ed4a2d8d88d62029267/raw/general.svg">](#)
 [<img align="right" width="390" alt="🦑" src="https://gist.githubusercontent.com/nathanredblur/3fc94c8920887ed4a2d8d88d62029267/raw/achievements.svg">](#)
 
+<img align="right" width="390" alt="🦑" src="https://github-readme-stats-kw8r-nathanredblur.vercel.app/api?username=nathanredblur&count_private=true&show_icons=true" />
+
+<img align="right" width="390" alt="🦑" src="https://github-readme-stats-kw8r-nathanredblur.vercel.app/api/top-langs/?username=nathanredblur&layout=compact" />
+
 <br clear="left"/>
 
 - Node.js, Express - 7 years
@@ -72,8 +78,6 @@ Learning:
 - Serverless, Rust, React Native
 And more everyday...
 
-
-![NathanRedblur's GitHub stats](https://github-readme-stats-kw8r-nathanredblur.vercel.app/api?username=nathanredblur&count_private=true&show_icons=true) ![Top Langs](https://github-readme-stats-kw8r-nathanredblur.vercel.app/api/top-langs/?username=nathanredblur&layout=compact) 
   
 <!--START_SECTION:activity-->
 1. 🗣 Commented on [#2402](https://github.com/anuraghazra/github-readme-stats/issues/2402) in [anuraghazra/github-readme-stats](https://github.com/anuraghazra/github-readme-stats)
