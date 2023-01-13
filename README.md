@@ -15,6 +15,8 @@
     </a>
     <img src="https://komarev.com/ghpvc/?username=nathanredblur&color=blueviolet" />
   </div>
+  
+  [<img align="right" width="150" alt="🦑" src="https://count.getloli.com/get/@:nathanredblur?theme=rule34">](https://www.youtube.com/watch?v=PqXPW0oBKgg)
 
   <br clear="left"/>
 </div>
@@ -54,7 +56,10 @@ I'm a passionate FrontEnd developer living in Medellín, Colombia. Currently wor
 
 <br clear="left"/>
 
-![Tech Skills ](https://cr-skills-chart-widget.azurewebsites.net/api/api?username=nathanredblur)
+[<img align="left" width="390" alt="🦑" src="https://gist.githubusercontent.com/nathanredblur/3fc94c8920887ed4a2d8d88d62029267/raw/general.svg">](#)
+[<img align="right" width="390" alt="🦑" src="https://gist.githubusercontent.com/nathanredblur/3fc94c8920887ed4a2d8d88d62029267/raw/achievements.svg">](#)
+
+<br clear="left"/>
 
 - Node.js, Express - 7 years
 - React, Redux, FramerMotion - 2 years
