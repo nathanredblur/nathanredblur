@@ -1,4 +1,8 @@
-<!--- inspiration https://zzetao.github.io/awesome-github-profile/ -->
+<!--- 
+  inspiration:
+  https://zzetao.github.io/awesome-github-profile/
+  https://github.com/rzashakeri/beautify-github-profile?ref=producthunt   
+-->
 
 <img src="https://media4.giphy.com/media/Gi8ilHwjq6kcU/giphy.gif?cid=790b7611eb5ec2968647e8614a140bf1a1b6122a86062cf2&rid=giphy.gif&ct=g" 
        width="200" align="left" />
