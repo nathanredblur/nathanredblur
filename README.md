@@ -22,7 +22,7 @@
 
 I'm a passionate FrontEnd developer living in Medellín, Colombia. Currently working with some of the greatest tools and frameworks out there. 
 
-- 🔭 I’m currently working like FrontEnd on AllTheRooms.com
+- 🔭 I’m currently working like FrontEnd on Getaround.com
 - 🌱 I’m currently learning ReactNative
 - 👯 I’m looking to collaborate on Fun
 - 🤔 I’m looking for help with understand option market shares
