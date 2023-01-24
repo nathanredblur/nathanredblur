@@ -85,9 +85,9 @@ And more everyday...
 
   
 <!--START_SECTION:activity-->
-1. 🗣 Commented on [#19](https://github.com/josh-collinsworth/joco-sveltekit/issues/19) in [josh-collinsworth/joco-sveltekit](https://github.com/josh-collinsworth/joco-sveltekit)
-2. 🗣 Commented on [#2402](https://github.com/anuraghazra/github-readme-stats/issues/2402) in [anuraghazra/github-readme-stats](https://github.com/anuraghazra/github-readme-stats)
-3. ❗️ Opened issue [#43](https://github.com/storybookjs/addon-postcss/issues/43) in [storybookjs/addon-postcss](https://github.com/storybookjs/addon-postcss)
-4. 🗣 Commented on [#1005](https://github.com/callstack/linaria/issues/1005) in [callstack/linaria](https://github.com/callstack/linaria)
+1. ❗️ Opened issue [#43](https://github.com/Stillness-2/beardie/issues/43) in [Stillness-2/beardie](https://github.com/Stillness-2/beardie)
+2. 🗣 Commented on [#19](https://github.com/josh-collinsworth/joco-sveltekit/issues/19) in [josh-collinsworth/joco-sveltekit](https://github.com/josh-collinsworth/joco-sveltekit)
+3. 🗣 Commented on [#2402](https://github.com/anuraghazra/github-readme-stats/issues/2402) in [anuraghazra/github-readme-stats](https://github.com/anuraghazra/github-readme-stats)
+4. ❗️ Opened issue [#43](https://github.com/storybookjs/addon-postcss/issues/43) in [storybookjs/addon-postcss](https://github.com/storybookjs/addon-postcss)
 5. 🗣 Commented on [#1005](https://github.com/callstack/linaria/issues/1005) in [callstack/linaria](https://github.com/callstack/linaria)
 <!--END_SECTION:activity-->
