@@ -85,9 +85,9 @@ And more everyday...
 
   
 <!--START_SECTION:activity-->
-1. 🗣 Commented on [#35](https://github.com/frodare/addon-redux/issues/35) in [frodare/addon-redux](https://github.com/frodare/addon-redux)
-2. ❗️ Opened issue [#43](https://github.com/Stillness-2/beardie/issues/43) in [Stillness-2/beardie](https://github.com/Stillness-2/beardie)
-3. 🗣 Commented on [#19](https://github.com/josh-collinsworth/joco-sveltekit/issues/19) in [josh-collinsworth/joco-sveltekit](https://github.com/josh-collinsworth/joco-sveltekit)
-4. 🗣 Commented on [#2402](https://github.com/anuraghazra/github-readme-stats/issues/2402) in [anuraghazra/github-readme-stats](https://github.com/anuraghazra/github-readme-stats)
-5. ❗️ Opened issue [#43](https://github.com/storybookjs/addon-postcss/issues/43) in [storybookjs/addon-postcss](https://github.com/storybookjs/addon-postcss)
+1. ❗️ Opened issue [#298](https://github.com/requestly/requestly/issues/298) in [requestly/requestly](https://github.com/requestly/requestly)
+2. 🗣 Commented on [#35](https://github.com/frodare/addon-redux/issues/35) in [frodare/addon-redux](https://github.com/frodare/addon-redux)
+3. ❗️ Opened issue [#43](https://github.com/Stillness-2/beardie/issues/43) in [Stillness-2/beardie](https://github.com/Stillness-2/beardie)
+4. 🗣 Commented on [#19](https://github.com/josh-collinsworth/joco-sveltekit/issues/19) in [josh-collinsworth/joco-sveltekit](https://github.com/josh-collinsworth/joco-sveltekit)
+5. 🗣 Commented on [#2402](https://github.com/anuraghazra/github-readme-stats/issues/2402) in [anuraghazra/github-readme-stats](https://github.com/anuraghazra/github-readme-stats)
 <!--END_SECTION:activity-->
