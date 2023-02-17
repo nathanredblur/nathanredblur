@@ -85,9 +85,9 @@ And more everyday...
 
   
 <!--START_SECTION:activity-->
-1. ❗️ Closed issue [#298](https://github.com/requestly/requestly/issues/298) in [requestly/requestly](https://github.com/requestly/requestly)
-2. 🗣 Commented on [#298](https://github.com/requestly/requestly/issues/298) in [requestly/requestly](https://github.com/requestly/requestly)
-3. ❗️ Opened issue [#298](https://github.com/requestly/requestly/issues/298) in [requestly/requestly](https://github.com/requestly/requestly)
-4. 🗣 Commented on [#35](https://github.com/frodare/addon-redux/issues/35) in [frodare/addon-redux](https://github.com/frodare/addon-redux)
-5. ❗️ Opened issue [#43](https://github.com/Stillness-2/beardie/issues/43) in [Stillness-2/beardie](https://github.com/Stillness-2/beardie)
+1. 🗣 Commented on [#162555](https://github.com/microsoft/vscode/issues/162555) in [microsoft/vscode](https://github.com/microsoft/vscode)
+2. ❗️ Closed issue [#298](https://github.com/requestly/requestly/issues/298) in [requestly/requestly](https://github.com/requestly/requestly)
+3. 🗣 Commented on [#298](https://github.com/requestly/requestly/issues/298) in [requestly/requestly](https://github.com/requestly/requestly)
+4. ❗️ Opened issue [#298](https://github.com/requestly/requestly/issues/298) in [requestly/requestly](https://github.com/requestly/requestly)
+5. 🗣 Commented on [#35](https://github.com/frodare/addon-redux/issues/35) in [frodare/addon-redux](https://github.com/frodare/addon-redux)
 <!--END_SECTION:activity-->
