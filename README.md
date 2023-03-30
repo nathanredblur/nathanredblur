@@ -85,9 +85,9 @@ And more everyday...
 
   
 <!--START_SECTION:activity-->
-1. 🗣 Commented on [#162555](https://github.com/microsoft/vscode/issues/162555) in [microsoft/vscode](https://github.com/microsoft/vscode)
-2. ❗️ Closed issue [#298](https://github.com/requestly/requestly/issues/298) in [requestly/requestly](https://github.com/requestly/requestly)
-3. 🗣 Commented on [#298](https://github.com/requestly/requestly/issues/298) in [requestly/requestly](https://github.com/requestly/requestly)
-4. ❗️ Opened issue [#298](https://github.com/requestly/requestly/issues/298) in [requestly/requestly](https://github.com/requestly/requestly)
-5. 🗣 Commented on [#35](https://github.com/frodare/addon-redux/issues/35) in [frodare/addon-redux](https://github.com/frodare/addon-redux)
+1. 🗣 Commented on [#2140](https://github.com/react-dates/react-dates/issues/2140) in [react-dates/react-dates](https://github.com/react-dates/react-dates)
+2. 🗣 Commented on [#162555](https://github.com/microsoft/vscode/issues/162555) in [microsoft/vscode](https://github.com/microsoft/vscode)
+3. ❗️ Closed issue [#298](https://github.com/requestly/requestly/issues/298) in [requestly/requestly](https://github.com/requestly/requestly)
+4. 🗣 Commented on [#298](https://github.com/requestly/requestly/issues/298) in [requestly/requestly](https://github.com/requestly/requestly)
+5. ❗️ Opened issue [#298](https://github.com/requestly/requestly/issues/298) in [requestly/requestly](https://github.com/requestly/requestly)
 <!--END_SECTION:activity-->
