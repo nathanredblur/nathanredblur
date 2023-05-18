@@ -86,8 +86,8 @@ And more everyday...
   
 <!--START_SECTION:activity-->
 1. 🗣 Commented on [#167](https://github.com/stephencookdev/speed-measure-webpack-plugin/issues/167) in [stephencookdev/speed-measure-webpack-plugin](https://github.com/stephencookdev/speed-measure-webpack-plugin)
-2. 🗣 Commented on [#35638](https://github.com/ant-design/ant-design/issues/35638) in [ant-design/ant-design](https://github.com/ant-design/ant-design)
-3. ❗️ Opened issue [#87](https://github.com/victorbalssa/abacus/issues/87) in [victorbalssa/abacus](https://github.com/victorbalssa/abacus)
-4. 🗣 Commented on [#2140](https://github.com/react-dates/react-dates/issues/2140) in [react-dates/react-dates](https://github.com/react-dates/react-dates)
-5. 🗣 Commented on [#162555](https://github.com/microsoft/vscode/issues/162555) in [microsoft/vscode](https://github.com/microsoft/vscode)
+2. 🗣 Commented on [#167](https://github.com/stephencookdev/speed-measure-webpack-plugin/issues/167) in [stephencookdev/speed-measure-webpack-plugin](https://github.com/stephencookdev/speed-measure-webpack-plugin)
+3. 🗣 Commented on [#35638](https://github.com/ant-design/ant-design/issues/35638) in [ant-design/ant-design](https://github.com/ant-design/ant-design)
+4. ❗️ Opened issue [#87](https://github.com/victorbalssa/abacus/issues/87) in [victorbalssa/abacus](https://github.com/victorbalssa/abacus)
+5. 🗣 Commented on [#2140](https://github.com/react-dates/react-dates/issues/2140) in [react-dates/react-dates](https://github.com/react-dates/react-dates)
 <!--END_SECTION:activity-->
