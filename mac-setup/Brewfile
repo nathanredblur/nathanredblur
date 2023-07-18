@@ -1,0 +1,56 @@
+# brew
+brew "nodenv"
+brew "pyenv"
+brew "rbenv"
+brew "ruby-build"
+
+# Cask apps
+# Terminal
+cask "iterm2"
+brew "git"
+# cask "warp"
+
+# Browsers
+cask "google-chrome"
+cask "microsoft-edge"
+cask "finicky"
+
+# Communication
+cask "slack"
+cask "whatsapp"
+cask "telegram"
+cask "discord"
+
+# Productivity
+cask "raycast"
+# cask "alfred"
+cask "betterzip"
+cask "monitorcontrol" # control external monitor brightness
+cask "rectangle"
+
+# Extras
+# cask "rocket"
+# cask "linearmouse"
+cask "syntax-highlight" # syntax highlight code in notes
+
+# Utilities
+cask "spotify"
+cask "vlc"
+cask "soundsource"
+cask "cleanshot"
+cask "time-out"
+cask "cleanmymac"
+cask "keycue"
+cask "onedrive"
+# cask "beardie" # media key control
+cask "reflex" # media key control
+
+# Development
+cask "visual-studio-code"
+cask "docker"
+cask "sourcetree"
+
+# mas
+mas "Irvue", id: 1039633667
+mas "In Your Face", id: 1476964367
+mas "Numbers", id: 409203825
