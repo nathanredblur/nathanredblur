@@ -31,7 +31,7 @@ cask "rectangle"
 # Extras
 # cask "rocket"
 # cask "linearmouse"
-cask "syntax-highlight" # syntax highlight code in notes
+cask "syntax-highlight", args: { no_quarantine: true } # syntax highlight code in notes
 
 # Utilities
 cask "spotify"
@@ -44,6 +44,7 @@ cask "keycue"
 cask "onedrive"
 # cask "beardie" # media key control
 cask "reflex" # media key control
+cask "bartender"
 
 # Development
 cask "visual-studio-code"
@@ -53,4 +54,3 @@ cask "sourcetree"
 # mas
 mas "Irvue", id: 1039633667
 mas "In Your Face", id: 1476964367
-mas "Numbers", id: 409203825

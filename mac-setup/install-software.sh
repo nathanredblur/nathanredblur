@@ -26,37 +26,48 @@ SUDO_USER=$(whoami)
 
 
 # Install xcode
-xcode-select --install
-# sudo -u $SUDO_USER xcodebuild -license accept
+echo "Checking Command Line Tools for Xcode"
+# Only run if the tools are not installed yet
+# To check that try to print the SDK path
+xcode-select -p &> /dev/null
+if [ $? -ne 0 ]; then
+  echo "Command Line Tools for Xcode not found. Installing from softwareupdate…"
+# This temporary file prompts the 'softwareupdate' utility to list the Command Line Tools
+  touch /tmp/.com.apple.dt.CommandLineTools.installondemand.in-progress;
+  PROD=$(softwareupdate -l | grep "\*.*Command Line" | tail -n 1 | sed 's/^[^C]* //')
+  softwareupdate -i "$PROD" --verbose;
+else
+  echo "Command Line Tools for Xcode have been installed."
+fi
 
 
 # Install brew
 if test ! $(which brew); then
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  (echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> ~/.profile
+  eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
+
+brew analytics off
 
 brew update
 brew upgrade
 
 brew install mas
 
-# find the CLI Tools update
-echo "find CLI tools update"
-PROD=$(softwareupdate -l | grep "\*.*Command Line" | head -n 1 | awk -F"*" '{print $2}' | sed -e 's/^ *//' | tr -d '\n') || true
-# install it
-if [[ ! -z "$PROD" ]]; then
-  softwareupdate -i "$PROD" --verbose
-fi
+brew bundle install --verbose --no-lock --file=./Brewfile
 
-brew bundle --no-quarantine --file=./Brewfile
-
-# update zhrc
+# update zprofile
 cat ./zprofile.sh >> ~/.zprofile
 
 # config finicky
 cp -fr ./finicky.js ~/.finicky.js
 
 # config git
-sh ./gitconfig.sh
+sh ./gitconf.sh
+
+# config
+defaults write -g InitialKeyRepeat -int 10 # normal minimum is 15 (225 ms)
+defaults write -g KeyRepeat -int 1 # normal minimum is 2 (30 ms)
 
 exec "$SHELL"
