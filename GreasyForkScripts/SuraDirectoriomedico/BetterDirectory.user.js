@@ -16,11 +16,11 @@
 // Helpers
 function GM_addStyle(css) {
   const style = document.getElementById("GM_addStyleBy8626") || (function() {
-      const style = document.createElement('style');
-      style.type = 'text/css';
-      style.id = "GM_addStyleBy8626";
-      document.head.appendChild(style);
-      return style;
+    const style = document.createElement('style');
+    style.type = 'text/css';
+    style.id = "GM_addStyleBy8626";
+    document.head.appendChild(style);
+    return style;
   })();
   const sheet = style.sheet;
   sheet.insertRule(css, (sheet.rules || sheet.cssRules || []).length);
@@ -31,25 +31,25 @@ function GM_addStyle(css) {
  * @param {String} querySelector - Selector of element to wait for
  * @param {Integer} timeout - Milliseconds to wait before timing out, or 0 for no timeout
  */
-function waitForElement(querySelector, timeout){
+function waitForElement(querySelector, timeout) {
   return new Promise((resolve, reject)=>{
-      var timer = false;
-      if(document.querySelectorAll(querySelector).length) return resolve();
-      const observer = new MutationObserver(()=>{
-          if(document.querySelectorAll(querySelector).length){
-              observer.disconnect();
-              if(timer !== false) clearTimeout(timer);
-              return resolve();
-          }
-      });
-      observer.observe(document.body, {
-          childList: true,
-          subtree: true
-      });
-      if(timeout) timer = setTimeout(()=>{
-          observer.disconnect();
-          reject();
-      }, timeout);
+    var timer = false;
+    if(document.querySelectorAll(querySelector).length) return resolve();
+    const observer = new MutationObserver(()=>{
+      if(document.querySelectorAll(querySelector).length){
+        observer.disconnect();
+        if(timer !== false) clearTimeout(timer);
+        return resolve();
+      }
+    });
+    observer.observe(document.body, {
+      childList: true,
+      subtree: true
+    });
+    if(timeout) timer = setTimeout(()=>{
+      observer.disconnect();
+      reject();
+    }, timeout);
   });
 }
 
@@ -58,10 +58,10 @@ const observeUrlChange = (cb) => {
   let oldHref = document.location.href;
   const body = document.querySelector("body");
   const observer = new MutationObserver(mutations => {
-      if (oldHref !== document.location.href) {
-          oldHref = document.location.href;
-          cb()
-      }
+    if (oldHref !== document.location.href) {
+      oldHref = document.location.href;
+      cb()
+    }
   });
   observer.observe(body, { childList: true, subtree: true });
 };
@@ -71,17 +71,18 @@ const observeUrlChange = (cb) => {
 
   // set Cedula by default
   waitForElement("#idTipoDocumento", 3000).then(function(){
-      document.getElementById("idTipoDocumento").value = "C";
+    document.getElementById("idTipoDocumento").value = "C";
   })
 
   const fireOnNewPage = () => {
-      // set Medellin as default
-      waitForElement("#idMunicipio > option[value='4292']", 3000).then(function(){
-          const el = document.getElementById("idMunicipio");
-          var event = new Event('change');
-          el.value = "4292";
-          el.dispatchEvent(event);
-      })
+    // set Medellin as default
+    waitForElement("#idMunicipio > option[value='4292']", 3000).then(function(){
+      const el = document.getElementById("idMunicipio");
+      var event = new Event('change');
+      el.value = "4292";
+      el.dispatchEvent(event);
+    })
+
   }
 
   observeUrlChange(fireOnNewPage)
