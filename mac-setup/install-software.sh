@@ -17,7 +17,7 @@ IFS=$'\n\t'
 # (_xcode-select installation_ installs git already, however git will be installed via brew packages as well to install as much as possible the brew way
 #  this way you benefit from frequent brew updates)
 # 
-# 4) don't let the “Operation not permitted” error bite you
+# 4) don't let the "Operation not permitted" error bite you
 # Please make sure you system settings allow the termianl full disk access
 # https://osxdaily.com/2018/10/09/fix-operation-not-permitted-terminal-error-macos/
 

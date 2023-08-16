@@ -2,6 +2,7 @@
 # https://github.com/nodenv/nodenv#installation
 brew "nodenv"
 brew "pyenv"
+brew "pyenv-virtualenv"
 brew "rbenv"
 brew "ruby-build"
 
