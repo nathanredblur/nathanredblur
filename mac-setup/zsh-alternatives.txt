@@ -1,0 +1,4 @@
+# https://www.chezmoi.io/
+# brew install jandedobbeleer/oh-my-posh/oh-my-posh
+# https://github.com/marlonrichert/zsh-autocomplete
+# https://github.com/Aloxaf/fzf-tab

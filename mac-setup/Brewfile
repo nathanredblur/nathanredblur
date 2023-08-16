@@ -1,4 +1,5 @@
 # brew
+# https://github.com/nodenv/nodenv#installation
 brew "nodenv"
 brew "pyenv"
 brew "rbenv"
@@ -25,8 +26,11 @@ cask "discord"
 cask "raycast"
 # cask "alfred"
 cask "betterzip"
-cask "monitorcontrol" # control external monitor brightness
 cask "rectangle"
+
+# https://github.com/MonitorControl/MonitorControl
+# Dell Monitor Controler
+cask "monitorcontrol"
 
 # Extras
 # cask "rocket"
@@ -42,14 +46,24 @@ cask "time-out"
 cask "cleanmymac"
 cask "keycue"
 cask "onedrive"
-# cask "beardie" # media key control
-cask "reflex" # media key control
+
 cask "bartender"
+cask "aldente" # helps with battery
+cask "adguard"
+
+# media key control
+# https://stuntsoftware.com/reflex/
+cask "reflex"
+# cask "beardie"
 
 # Development
 cask "visual-studio-code"
 cask "docker"
 cask "sourcetree"
+
+# Firewall
+# https://objective-see.org/products/lulu.html
+# cask "lulu"
 
 # mas
 mas "Irvue", id: 1039633667

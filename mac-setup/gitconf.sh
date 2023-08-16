@@ -6,6 +6,7 @@ git config --global user.email ""
 git config --global credential.helper osxkeychain
 
 # Configure git aliases and auto rebase
+# http://aanandprasad.com/git-up/
 git config --global alias.up 'pull --rebase --autostash'
 git config --global pull.rebase true
 git config --global rebase.autoStash true
