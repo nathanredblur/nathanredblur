@@ -83,6 +83,15 @@ const observeUrlChange = (cb) => {
       el.dispatchEvent(event);
     })
 
+    // add consulta + button
+    if(window.location.hash == '#/redasegurado/S/N') {
+      const button = document.createElement("button");
+      button.innerHTML = "Consulta +";
+      button.classList.add("btn", "btn-primary");
+      button.style.marginTop = "10px";
+      button.style.width = "100%";
+      document.querySelector(".dm-general-filter").appendChild(button);
+    }
   }
 
   observeUrlChange(fireOnNewPage)
