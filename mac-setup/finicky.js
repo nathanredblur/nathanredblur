@@ -3,16 +3,27 @@
 
 
 module.exports = {
-  defaultBrowser: "Microsoft Edge",   
+  defaultBrowser: "Microsoft Edge Dev",   
   handlers: [
     {
       // Open any link clicked in VsCode
-      match: ({ opener }) => ["com.microsoft.VSCode", "com.googlecode.iterm2", "com.bluebanana-software.inyourface"].includes(opener.bundleId),
+      match: ({ opener }) => [
+        "com.microsoft.VSCode", 
+        "com.microsoft.VSCodeInsiders",
+        "com.googlecode.iterm2", 
+        "dev.warp.Warp-Stable",
+        "com.bluebanana-software.inyourface",
+        "com.apple.dt.Xcode",
+      ].includes(opener.bundleId),
       browser: "Google Chrome"
     },
     {
       match: /^https?:\/\/localhost:/,
       browser: "Google Chrome"
+    },
+    {
+      match: /dev\.local\.itsgoti\.me/,
+      browser: "Google Chrome",
     },
     {
       match: /^file:\/\//,
