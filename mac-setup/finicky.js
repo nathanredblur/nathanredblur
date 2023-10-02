@@ -1,9 +1,26 @@
 // Use https://finicky-kickstart.now.sh to generate basic configuration
 // Learn more about configuration options: https://github.com/johnste/finicky/wiki/Configuration
-
+// how to find Bundle ID: https://www.hexnode.com/mobile-device-management/help/how-to-find-the-bundle-id-of-an-application-on-mac/
+// osascript -e 'id of app "App Name"' 
+// to enable open tmx:// links in vscode run this in terminal:
+// duti -s net.kassett.finicky txmt 
 
 module.exports = {
-  defaultBrowser: "Microsoft Edge Dev",   
+  defaultBrowser: ["Microsoft Edge", "Google Chrome"],
+  rewrite: [
+    {
+      match: /^txmt:\/\/open\?url=file:\/\/(.*)/,
+      url: ({ urlString }) => {
+        const newPath =  urlString
+          .replace("txmt://open?url=file://", "vscode://file/") 
+          .replace("&line=", ":")
+          .replace("&column=", ":")
+
+        finicky.log(newPath)
+        return newPath
+      }
+    },
+  ],
   handlers: [
     {
       // Open any link clicked in VsCode
@@ -29,5 +46,9 @@ module.exports = {
       match: /^file:\/\//,
       browser: "Google Chrome"
     },
+    {
+      match: /^vscode:\/\/(.*)/,
+      browser: "Visual Studio Code"
+    }
   ]
 }
