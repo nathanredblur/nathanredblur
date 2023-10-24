@@ -85,7 +85,7 @@ And more everyday...
 
   
 <!--START_SECTION:activity-->
-1. 🗣 Commented on [#668](https://github.com/FastForwardTeam/FastForward/issues/668#issuecomment-1644700867) in [FastForwardTeam/FastForward](https://github.com/FastForwardTeam/FastForward)
+1. 🗣 Commented on [#587](https://github.com/Shopify/vscode-ruby-lsp/issues/587#issuecomment-1777928495) in [Shopify/vscode-ruby-lsp](https://github.com/Shopify/vscode-ruby-lsp)
 2. 🗣 Commented on [#173](https://github.com/jessemiller/HamlPy/issues/173#issuecomment-1583118547) in [jessemiller/HamlPy](https://github.com/jessemiller/HamlPy)
 3. 🗣 Commented on [#167](https://github.com/stephencookdev/speed-measure-webpack-plugin/issues/167#issuecomment-1551988050) in [stephencookdev/speed-measure-webpack-plugin](https://github.com/stephencookdev/speed-measure-webpack-plugin)
 4. 🗣 Commented on [#167](https://github.com/stephencookdev/speed-measure-webpack-plugin/issues/167#issuecomment-1551947386) in [stephencookdev/speed-measure-webpack-plugin](https://github.com/stephencookdev/speed-measure-webpack-plugin)
