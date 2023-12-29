@@ -495,7 +495,7 @@ class GithubRepository {
     this.currentCommittish = this.url.searchParams.get("template") || "default";
     this.templates = {};
     this.user = document.querySelector("meta[name=user-login]").content;
-    this.baseUserURL = `https://github.com/${this.user}/${this.user}`;
+    this.userBaseUrl = `https://github.com/${this.user}/${this.user}`;
   }
 
   attachDropdown = () => {
@@ -511,13 +511,14 @@ class GithubRepository {
     return Promise.all([
       this.fetchDefaultTemplate(),
       this.fetchCustomTemplates(),
+      this.fetchUserTemplates(),
     ])
-      .then(([defaultTemplate, customTemplates]) => {
+      .then(([defaultTemplate, customTemplates, userTemplates]) => {
         if (defaultTemplate) {
           this.templates["default"] = defaultTemplate;
         }
 
-        Object.assign(this.templates, customTemplates);
+        Object.assign(this.templates, customTemplates, userTemplates);
         const refs = Object.keys(this.templates);
 
         localStorage.setItem(
@@ -532,27 +533,40 @@ class GithubRepository {
     return this.fetchTemplate(".github/pull_request_template.md");
   };
 
+  processGithubData = (data, prefix = "") => {
+    const templateUrls = [];
+    const templateBaseNames = [];
+    data.payload.tree.items.map((item) => {
+      templateUrls.push(item.path);
+      templateBaseNames.push(`${prefix}${prefix ? "-" : ""}${item.name}`);
+    });
+
+    return Promise.all(templateUrls.map(this.fetchTemplate)).then((templates) =>
+      zipObject(templateBaseNames, templates)
+    );
+  };
+
   fetchCustomTemplates = () => {
     return this.fetchGithub(
       `/tree/${this.branch}/.github/PULL_REQUEST_TEMPLATE`
     )
       .then((res) => res.json())
-      .then((data) => {
-        const templateUrls = [];
-        const templateBaseNames = [];
-        data.payload.tree.items.map((item) => {
-          templateUrls.push(item.path);
-          templateBaseNames.push(item.name);
-        });
+      .then(this.processGithubData);
+  };
 
-        return Promise.all(templateUrls.map(this.fetchTemplate)).then(
-          (templates) => zipObject(templateBaseNames, templates)
-        );
+  fetchUserTemplates = () => {
+    return this.fetchGithub(
+      "/tree/main/.github/PULL_REQUEST_TEMPLATE",
+      this.userBaseUrl
+    )
+      .then((res) => res.json())
+      .then((data) => {
+        return this.processGithubData(data, "user");
       });
   };
 
-  fetchGithub = (path) => {
-    return fetch(`${this.baseURL}${path}`, { credentials: "same-origin" }).then(
+  fetchGithub = (path, base = this.baseURL) => {
+    return fetch(`${base}${path}`, { credentials: "same-origin" }).then(
       (res) => {
         if (!res.ok) return Promise.resolve({ text: () => "" });
         return res;
