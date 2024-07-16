@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Toggl calculate amount
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.2
 // @description  calculate automatically the amount
 // @author       NathanRedblur
 // @license      MIT
@@ -19,10 +19,28 @@ const nativeInputValueSetter = Object.getOwnPropertyDescriptor(
   window.HTMLInputElement.prototype,
   'value').set;
 
+const nativeTextAreaValueSetter = Object.getOwnPropertyDescriptor(
+  window.HTMLTextAreaElement.prototype,
+  'value').set;
+
 const triggerNativeEventFor = (element, { event, value }) => {
-  nativeInputValueSetter.call(element, value);
-  const inputEvent = new Event(event, { bubbles: true });
-  element.dispatchEvent(inputEvent);
+  if (element.tagName === "TEXTAREA") nativeTextAreaValueSetter.call(element, value);
+  if (element.tagName === "INPUT") nativeInputValueSetter.call(element, value);
+  const eventObj = new Event(event, { bubbles: true });
+  element.dispatchEvent(eventObj);
+}
+
+// save in local storage
+const prefix = "togglPlus_";
+const saveToLocalStorage = (key, value) => {
+  localStorage.setItem(prefix + key
+    , JSON.stringify(value));
+}
+
+// get from local storage
+const getFromLocalStorage = (key) => {
+  const value = localStorage.getItem(prefix + key);
+  return value ? JSON.parse(value) : null;
 }
 
 (function () {
@@ -54,6 +72,19 @@ const triggerNativeEventFor = (element, { event, value }) => {
       });
     }
 
+    // set and get invoice id from local storage
+    const injectSaveInvoiceId = (fieldName, name) => {
+      const inputElement = document.querySelector(`[name='${fieldName}'`);
+      const value = getFromLocalStorage(name);
+      if (value) {
+        triggerNativeEventFor(inputElement, { event: "input", value: value });
+      }
+
+      inputElement.addEventListener("change", (e) => {
+        saveToLocalStorage(name, e.target.value);
+      });
+    }
+
     const injectHourlyRateInput = () => {
       const currencyInput = document.querySelector("input[id='meta:currency'")
       currencyInput.setAttribute("style", "width: 100px;");
@@ -82,6 +113,10 @@ const triggerNativeEventFor = (element, { event, value }) => {
 
     injectHourlyRateInput();
     addCalculateButton();
+    injectSaveInvoiceId("meta:id", "invoiceId");
+    injectSaveInvoiceId("billedTo:address", "billedToAddress");
+    injectSaveInvoiceId("payTo:address", "payToAddress");
+    calculateAllAmounts();
   }
 
   const onUrlChange = () => {
