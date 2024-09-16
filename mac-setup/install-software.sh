@@ -66,5 +66,8 @@ cp -fr ./finicky.js ~/.finicky.js
 # config git
 sh ./gitconf.sh
 
+# fix keyboard keys
+copy ./org.custom.keyboard-remap.plist /Library/LaunchDaemons/org.custom.keyboard-remap.plist
+launchctl load -w /Library/LaunchDaemons/org.custom.keyboard-remap.plist
 
 exec "$SHELL"
