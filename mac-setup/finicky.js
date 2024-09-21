@@ -4,14 +4,14 @@
 // osascript -e 'id of app "App Name"' 
 
 module.exports = {
-  defaultBrowser: ["Microsoft Edge", "Google Chrome"],
+  defaultBrowser: ["Arc", "Microsoft Edge", "Google Chrome"],
   handlers: [
     {
       // Open any link clicked in VsCode
       match: ({ opener }) => [
-        "com.microsoft.VSCode", 
+        "com.microsoft.VSCode",
         "com.microsoft.VSCodeInsiders",
-        "com.googlecode.iterm2", 
+        "com.googlecode.iterm2",
         "dev.warp.Warp-Stable",
         "com.bluebanana-software.inyourface",
         "com.apple.dt.Xcode",
