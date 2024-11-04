@@ -4,7 +4,7 @@
 // osascript -e 'id of app "App Name"' 
 
 module.exports = {
-  defaultBrowser: ["Arc", "Microsoft Edge", "Google Chrome"],
+  defaultBrowser: ["Zen Browser", "Microsoft Edge", "Google Chrome"],
   handlers: [
     {
       // Open any link clicked in VsCode
