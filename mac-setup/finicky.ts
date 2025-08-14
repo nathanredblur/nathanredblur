@@ -8,7 +8,7 @@
 import type { FinickyConfig } from "/Applications/Finicky.app/Contents/Resources/finicky.d.ts";
 
 export default {
-  defaultBrowser: "Vivaldi Browser",
+  defaultBrowser: "Vivaldi",
   rewrite: [
     {
       // Redirect all x.com urls to use xcancel.com
