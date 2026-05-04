@@ -44,6 +44,16 @@
         <animate attributeName="width" from="0" to="1200" dur="1.8s" begin="0.4s" fill="freeze" />
       </rect>
     </clipPath>
+
+    <!--
+      Orbit paths centered on (600, 180) — the geometric center of the viewBox.
+      A full circle requires TWO half-circle arcs (not a single near-degenerate arc):
+        M cx-r,cy a r,r 0 1 1 2r,0 a r,r 0 1 1 -2r,0
+      Radii kept &lt; 180 so the circles stay fully inside the 360px tall viewBox.
+    -->
+    <path id="orbit-sm" d="M 480,180 a 120,120 0 1 1 240,0 a 120,120 0 1 1 -240,0" fill="none" />
+    <path id="orbit-md" d="M 450,180 a 150,150 0 1 1 300,0 a 150,150 0 1 1 -300,0" fill="none" />
+    <path id="orbit-lg" d="M 425,180 a 175,175 0 1 1 350,0 a 175,175 0 1 1 -350,0" fill="none" />
   </defs>
 
   <rect width="1200" height="360" fill="url(#bg)" />
@@ -94,20 +104,27 @@
     </circle>
   </g>
 
-  <ellipse cx="600" cy="190" rx="420" ry="90" fill="url(#glow)">
+  <ellipse cx="600" cy="180" rx="420" ry="90" fill="url(#glow)">
     <animate attributeName="rx" values="380;440;380" dur="6s" repeatCount="indefinite" />
     <animate attributeName="opacity" values="0.7;1;0.7" dur="6s" repeatCount="indefinite" />
   </ellipse>
 
+  <!-- Orbit guide rings, centered on (600, 180) -->
+  <g fill="none" stroke="#a78bfa" stroke-width="1" stroke-dasharray="2 6" opacity="0.45">
+    <circle cx="600" cy="180" r="120" />
+    <circle cx="600" cy="180" r="150" stroke="#22d3ee" />
+    <circle cx="600" cy="180" r="175" stroke="#f472b6" opacity="0.35" />
+  </g>
+
   <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="18" fill="#94a3b8">
-    <text x="600" y="100" text-anchor="middle" opacity="0">
+    <text x="600" y="80" text-anchor="middle" opacity="0">
       <tspan fill="#22d3ee">$</tspan> whoami
       <animate attributeName="opacity" values="0;1" dur="0.6s" begin="0.1s" fill="freeze" />
     </text>
   </g>
 
   <g clip-path="url(#reveal)">
-    <text x="600" y="200"
+    <text x="600" y="190"
           text-anchor="middle"
           font-family="ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
           font-size="78"
@@ -117,28 +134,28 @@
   </g>
 
   <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="20" fill="#cbd5e1" text-anchor="middle">
-    <text x="600" y="262" opacity="0">
+    <text x="600" y="252" opacity="0">
       <tspan fill="#64748b">&gt;</tspan> Senior Frontend Engineer
       <animate attributeName="opacity"
                values="0;1;1;0;0;0;0;0;0"
                keyTimes="0;0.04;0.22;0.25;0.5;0.75;0.97;0.98;1"
                dur="14s" begin="2.4s" repeatCount="indefinite" />
     </text>
-    <text x="600" y="262" opacity="0">
+    <text x="600" y="252" opacity="0">
       <tspan fill="#64748b">&gt;</tspan> AI-Assisted Development
       <animate attributeName="opacity"
                values="0;0;0;1;1;0;0;0;0"
                keyTimes="0;0.22;0.25;0.29;0.47;0.5;0.75;0.97;1"
                dur="14s" begin="2.4s" repeatCount="indefinite" />
     </text>
-    <text x="600" y="262" opacity="0">
+    <text x="600" y="252" opacity="0">
       <tspan fill="#64748b">&gt;</tspan> Design Systems &amp; A11y
       <animate attributeName="opacity"
                values="0;0;0;0;0;1;1;0;0"
                keyTimes="0;0.22;0.25;0.47;0.5;0.54;0.72;0.75;1"
                dur="14s" begin="2.4s" repeatCount="indefinite" />
     </text>
-    <text x="600" y="262" opacity="0">
+    <text x="600" y="252" opacity="0">
       <tspan fill="#64748b">&gt;</tspan> Medell&#237;n, Colombia
       <animate attributeName="opacity"
                values="0;0;0;0;0;0;0;1;1"
@@ -147,51 +164,57 @@
     </text>
   </g>
 
-  <line x1="430" y1="290" x2="770" y2="290"
+  <line x1="430" y1="285" x2="770" y2="285"
         stroke="url(#line)" stroke-width="2" stroke-linecap="round" opacity="0">
     <animate attributeName="opacity" values="0;1" dur="0.6s" begin="2.0s" fill="freeze" />
     <animate attributeName="x1" values="430;420;430" dur="5s" begin="2.6s" repeatCount="indefinite" />
     <animate attributeName="x2" values="770;780;770" dur="5s" begin="2.6s" repeatCount="indefinite" />
   </line>
 
-  <g fill="none" stroke="#a78bfa" stroke-width="1.2" opacity="0.55">
-    <circle cx="600" cy="200" r="160">
-      <animate attributeName="r" values="158;164;158" dur="7s" repeatCount="indefinite" />
-    </circle>
-    <circle cx="600" cy="200" r="200" stroke="#22d3ee" opacity="0.4">
-      <animate attributeName="r" values="198;206;198" dur="9s" repeatCount="indefinite" />
-    </circle>
-  </g>
-
+  <!--
+    Orbiting accent dots — three per ring, evenly spaced.
+    Negative `begin` offsets shift the starting point along the path:
+    on a path of duration D, begin="-Ns" places the element at N/D of the way around.
+  -->
   <g>
-    <circle r="5" fill="#a78bfa">
-      <animateMotion dur="14s" repeatCount="indefinite" rotate="auto">
-        <mpath href="#orbit1" />
-      </animateMotion>
+    <!-- Inner ring (r=120, 18s) - purple/violet family -->
+    <circle r="4.5" fill="#a78bfa">
+      <animateMotion dur="18s" repeatCount="indefinite"><mpath href="#orbit-sm" /></animateMotion>
       <animate attributeName="opacity" values="0.7;1;0.7" dur="3s" repeatCount="indefinite" />
     </circle>
-    <circle r="4" fill="#22d3ee">
-      <animateMotion dur="11s" begin="-3s" repeatCount="indefinite" rotate="auto">
-        <mpath href="#orbit2" />
-      </animateMotion>
-      <animate attributeName="opacity" values="0.7;1;0.7" dur="2.6s" repeatCount="indefinite" />
+    <circle r="3.5" fill="#c4b5fd">
+      <animateMotion dur="18s" begin="-6s" repeatCount="indefinite"><mpath href="#orbit-sm" /></animateMotion>
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="2.6s" repeatCount="indefinite" />
     </circle>
-    <circle r="3.5" fill="#f472b6">
-      <animateMotion dur="9s" begin="-5s" repeatCount="indefinite" rotate="auto">
-        <mpath href="#orbit2" />
-      </animateMotion>
+    <circle r="3" fill="#e9d5ff">
+      <animateMotion dur="18s" begin="-12s" repeatCount="indefinite"><mpath href="#orbit-sm" /></animateMotion>
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="3.2s" repeatCount="indefinite" />
+    </circle>
+
+    <!-- Middle ring (r=150, 24s, opposite direction via negative offsets) - cyan family -->
+    <circle r="5" fill="#22d3ee">
+      <animateMotion dur="24s" begin="-2s" repeatCount="indefinite"><mpath href="#orbit-md" /></animateMotion>
+      <animate attributeName="opacity" values="0.7;1;0.7" dur="2.8s" repeatCount="indefinite" />
+    </circle>
+    <circle r="3.5" fill="#67e8f9">
+      <animateMotion dur="24s" begin="-10s" repeatCount="indefinite"><mpath href="#orbit-md" /></animateMotion>
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="3.4s" repeatCount="indefinite" />
+    </circle>
+    <circle r="4" fill="#a5f3fc">
+      <animateMotion dur="24s" begin="-18s" repeatCount="indefinite"><mpath href="#orbit-md" /></animateMotion>
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="2.4s" repeatCount="indefinite" />
+    </circle>
+
+    <!-- Outer ring (r=175, 30s) - pink/yellow accent -->
+    <circle r="4" fill="#f472b6">
+      <animateMotion dur="30s" repeatCount="indefinite"><mpath href="#orbit-lg" /></animateMotion>
       <animate attributeName="opacity" values="0.7;1;0.7" dur="3.4s" repeatCount="indefinite" />
     </circle>
     <circle r="3" fill="#fde047">
-      <animateMotion dur="13s" begin="-2s" repeatCount="indefinite" rotate="auto">
-        <mpath href="#orbit1" />
-      </animateMotion>
+      <animateMotion dur="30s" begin="-15s" repeatCount="indefinite"><mpath href="#orbit-lg" /></animateMotion>
       <animate attributeName="opacity" values="0.6;1;0.6" dur="2.8s" repeatCount="indefinite" />
     </circle>
   </g>
-
-  <path id="orbit1" d="M 760,200 A 160,160 0 1 1 759.99,200 Z" fill="none" stroke="none" />
-  <path id="orbit2" d="M 800,200 A 200,200 0 1 1 799.99,200 Z" fill="none" stroke="none" />
 
   <path d="M 0,340 C 200,320 400,360 600,340 C 800,320 1000,360 1200,340 L 1200,360 L 0,360 Z"
         fill="url(#accent)" opacity="0.18">

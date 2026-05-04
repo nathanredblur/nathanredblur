@@ -47,9 +47,14 @@
   <circle cx="300" cy="230" r="170" fill="none" stroke="url(#ringGrad)" stroke-width="1" stroke-dasharray="2 6" opacity="0.5" />
   <circle cx="300" cy="230" r="220" fill="none" stroke="url(#ringGrad)" stroke-width="1" stroke-dasharray="2 6" opacity="0.35" />
 
-  <path id="ring1" d="M 420,230 A 120,120 0 1 1 419.99,230 Z" fill="none" stroke="none" />
-  <path id="ring2" d="M 470,230 A 170,170 0 1 1 469.99,230 Z" fill="none" stroke="none" />
-  <path id="ring3" d="M 520,230 A 220,220 0 1 1 519.99,230 Z" fill="none" stroke="none" />
+  <!--
+    Full-circle motion paths using two half-arcs (single-arc trick is degenerate):
+      M cx-r,cy a r,r 0 1 1 2r,0 a r,r 0 1 1 -2r,0
+    Centered on (300, 230).
+  -->
+  <path id="ring1" d="M 180,230 a 120,120 0 1 1 240,0 a 120,120 0 1 1 -240,0" fill="none" stroke="none" />
+  <path id="ring2" d="M 130,230 a 170,170 0 1 1 340,0 a 170,170 0 1 1 -340,0" fill="none" stroke="none" />
+  <path id="ring3" d="M 80,230 a 220,220 0 1 1 440,0 a 220,220 0 1 1 -440,0" fill="none" stroke="none" />
 
   <ellipse cx="300" cy="230" rx="80" ry="80" fill="url(#hubGlow)">
     <animate attributeName="rx" values="70;90;70" dur="3.5s" repeatCount="indefinite" />
