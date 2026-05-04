@@ -91,11 +91,11 @@
 ### Recent Activity
 
 <!--START_SECTION:activity-->
-1. 🗣 Commented on [#370](https://github.com/ophub/amlogic-s9xxx-armbian/issues/370#issuecomment-1837248796) in [ophub/amlogic-s9xxx-armbian](https://github.com/ophub/amlogic-s9xxx-armbian)
-2. 🗣 Commented on [#587](https://github.com/Shopify/vscode-ruby-lsp/issues/587#issuecomment-1777928495) in [Shopify/vscode-ruby-lsp](https://github.com/Shopify/vscode-ruby-lsp)
-3. 🗣 Commented on [#167](https://github.com/stephencookdev/speed-measure-webpack-plugin/issues/167#issuecomment-1551988050) in [stephencookdev/speed-measure-webpack-plugin](https://github.com/stephencookdev/speed-measure-webpack-plugin)
-4. 🗣 Commented on [#167](https://github.com/stephencookdev/speed-measure-webpack-plugin/issues/167#issuecomment-1551947386) in [stephencookdev/speed-measure-webpack-plugin](https://github.com/stephencookdev/speed-measure-webpack-plugin)
-5. ❗ Opened issue [#87](https://github.com/victorbalssa/abacus/issues/87) in [victorbalssa/abacus](https://github.com/victorbalssa/abacus)
+1. 🗣 Commented on [#16569](https://github.com/withastro/astro/pull/16569#issuecomment-4367658018) in [withastro/astro](https://github.com/withastro/astro)
+2. 🗣 Commented on [#439](https://github.com/expressive-code/expressive-code/issues/439#issuecomment-4362602181) in [expressive-code/expressive-code](https://github.com/expressive-code/expressive-code)
+3. 💪 Opened PR [#28](https://github.com/nathanredblur/nathanredblur.dev/pull/28) in [nathanredblur/nathanredblur.dev](https://github.com/nathanredblur/nathanredblur.dev)
+4. 💪 Opened PR [#16569](https://github.com/withastro/astro/pull/16569) in [withastro/astro](https://github.com/withastro/astro)
+5. 🎉 Merged PR [#27](https://github.com/nathanredblur/nathanredblur.dev/pull/27) in [nathanredblur/nathanredblur.dev](https://github.com/nathanredblur/nathanredblur.dev)
 <!--END_SECTION:activity-->
 
 <!--
