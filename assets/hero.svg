@@ -1,0 +1,204 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+  <title id="title">Nathan Redblur  Senior Frontend Engineer</title>
+  <desc id="desc">Animated banner introducing Jonathan Rico (Nathan Redblur), Senior Frontend Engineer based in Medellín, Colombia.</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0d12" />
+      <stop offset="50%" stop-color="#11141d" />
+      <stop offset="100%" stop-color="#161a26" />
+    </linearGradient>
+
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a78bfa">
+        <animate attributeName="stop-color"
+                 values="#a78bfa;#22d3ee;#f472b6;#fde047;#a78bfa"
+                 dur="12s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="50%" stop-color="#22d3ee">
+        <animate attributeName="stop-color"
+                 values="#22d3ee;#f472b6;#fde047;#a78bfa;#22d3ee"
+                 dur="12s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="100%" stop-color="#f472b6">
+        <animate attributeName="stop-color"
+                 values="#f472b6;#fde047;#a78bfa;#22d3ee;#f472b6"
+                 dur="12s" repeatCount="indefinite" />
+      </stop>
+    </linearGradient>
+
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#a78bfa" stop-opacity="0.35" />
+      <stop offset="60%" stop-color="#a78bfa" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#a78bfa" stop-opacity="0" />
+    </radialGradient>
+
+    <linearGradient id="line" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a78bfa" stop-opacity="0" />
+      <stop offset="50%" stop-color="#22d3ee" stop-opacity="1" />
+      <stop offset="100%" stop-color="#f472b6" stop-opacity="0" />
+    </linearGradient>
+
+    <clipPath id="reveal">
+      <rect x="0" y="0" width="0" height="360">
+        <animate attributeName="width" from="0" to="1200" dur="1.8s" begin="0.4s" fill="freeze" />
+      </rect>
+    </clipPath>
+  </defs>
+
+  <rect width="1200" height="360" fill="url(#bg)" />
+
+  <g stroke="#1f2433" stroke-width="1" opacity="0.6">
+    <line x1="0" y1="60"  x2="1200" y2="60" />
+    <line x1="0" y1="120" x2="1200" y2="120" />
+    <line x1="0" y1="180" x2="1200" y2="180" />
+    <line x1="0" y1="240" x2="1200" y2="240" />
+    <line x1="0" y1="300" x2="1200" y2="300" />
+    <line x1="200"  y1="0" x2="200"  y2="360" />
+    <line x1="400"  y1="0" x2="400"  y2="360" />
+    <line x1="600"  y1="0" x2="600"  y2="360" />
+    <line x1="800"  y1="0" x2="800"  y2="360" />
+    <line x1="1000" y1="0" x2="1000" y2="360" />
+  </g>
+
+  <g>
+    <circle cx="120"  cy="70"  r="1.6" fill="#ffffff">
+      <animate attributeName="opacity" values="0.2;1;0.2" dur="3.4s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="240"  cy="140" r="1.2" fill="#a78bfa">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="4.1s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="80"   cy="220" r="1.4" fill="#22d3ee">
+      <animate attributeName="opacity" values="0.2;0.9;0.2" dur="3.7s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="320"  cy="290" r="1.0" fill="#ffffff">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="2.9s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="930"  cy="60"  r="1.6" fill="#f472b6">
+      <animate attributeName="opacity" values="0.2;1;0.2" dur="3.2s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="1080" cy="140" r="1.2" fill="#ffffff">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="4.5s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="990"  cy="240" r="1.4" fill="#22d3ee">
+      <animate attributeName="opacity" values="0.2;0.9;0.2" dur="3.8s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="1130" cy="300" r="1.0" fill="#fde047">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="2.6s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="450"  cy="40"  r="1.0" fill="#ffffff">
+      <animate attributeName="opacity" values="0.2;0.8;0.2" dur="3.1s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="760"  cy="320" r="1.0" fill="#a78bfa">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="3.6s" repeatCount="indefinite" />
+    </circle>
+  </g>
+
+  <ellipse cx="600" cy="190" rx="420" ry="90" fill="url(#glow)">
+    <animate attributeName="rx" values="380;440;380" dur="6s" repeatCount="indefinite" />
+    <animate attributeName="opacity" values="0.7;1;0.7" dur="6s" repeatCount="indefinite" />
+  </ellipse>
+
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="18" fill="#94a3b8">
+    <text x="600" y="100" text-anchor="middle" opacity="0">
+      <tspan fill="#22d3ee">$</tspan> whoami
+      <animate attributeName="opacity" values="0;1" dur="0.6s" begin="0.1s" fill="freeze" />
+    </text>
+  </g>
+
+  <g clip-path="url(#reveal)">
+    <text x="600" y="200"
+          text-anchor="middle"
+          font-family="ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+          font-size="78"
+          font-weight="800"
+          letter-spacing="-2"
+          fill="url(#accent)">Nathan Redblur</text>
+  </g>
+
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="20" fill="#cbd5e1" text-anchor="middle">
+    <text x="600" y="262" opacity="0">
+      <tspan fill="#64748b">&gt;</tspan> Senior Frontend Engineer
+      <animate attributeName="opacity"
+               values="0;1;1;0;0;0;0;0;0"
+               keyTimes="0;0.04;0.22;0.25;0.5;0.75;0.97;0.98;1"
+               dur="14s" begin="2.4s" repeatCount="indefinite" />
+    </text>
+    <text x="600" y="262" opacity="0">
+      <tspan fill="#64748b">&gt;</tspan> AI-Assisted Development
+      <animate attributeName="opacity"
+               values="0;0;0;1;1;0;0;0;0"
+               keyTimes="0;0.22;0.25;0.29;0.47;0.5;0.75;0.97;1"
+               dur="14s" begin="2.4s" repeatCount="indefinite" />
+    </text>
+    <text x="600" y="262" opacity="0">
+      <tspan fill="#64748b">&gt;</tspan> Design Systems &amp; A11y
+      <animate attributeName="opacity"
+               values="0;0;0;0;0;1;1;0;0"
+               keyTimes="0;0.22;0.25;0.47;0.5;0.54;0.72;0.75;1"
+               dur="14s" begin="2.4s" repeatCount="indefinite" />
+    </text>
+    <text x="600" y="262" opacity="0">
+      <tspan fill="#64748b">&gt;</tspan> Medellín, Colombia
+      <animate attributeName="opacity"
+               values="0;0;0;0;0;0;0;1;1"
+               keyTimes="0;0.22;0.47;0.5;0.72;0.75;0.79;0.97;1"
+               dur="14s" begin="2.4s" repeatCount="indefinite" />
+    </text>
+  </g>
+
+  <line x1="430" y1="290" x2="770" y2="290"
+        stroke="url(#line)" stroke-width="2" stroke-linecap="round" opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.6s" begin="2.0s" fill="freeze" />
+    <animate attributeName="x1" values="430;420;430" dur="5s" begin="2.6s" repeatCount="indefinite" />
+    <animate attributeName="x2" values="770;780;770" dur="5s" begin="2.6s" repeatCount="indefinite" />
+  </line>
+
+  <g fill="none" stroke="#a78bfa" stroke-width="1.2" opacity="0.55">
+    <circle cx="600" cy="200" r="160">
+      <animate attributeName="r" values="158;164;158" dur="7s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="600" cy="200" r="200" stroke="#22d3ee" opacity="0.4">
+      <animate attributeName="r" values="198;206;198" dur="9s" repeatCount="indefinite" />
+    </circle>
+  </g>
+
+  <g>
+    <circle r="5" fill="#a78bfa">
+      <animateMotion dur="14s" repeatCount="indefinite" rotate="auto">
+        <mpath href="#orbit1" />
+      </animateMotion>
+      <animate attributeName="opacity" values="0.7;1;0.7" dur="3s" repeatCount="indefinite" />
+    </circle>
+    <circle r="4" fill="#22d3ee">
+      <animateMotion dur="11s" begin="-3s" repeatCount="indefinite" rotate="auto">
+        <mpath href="#orbit2" />
+      </animateMotion>
+      <animate attributeName="opacity" values="0.7;1;0.7" dur="2.6s" repeatCount="indefinite" />
+    </circle>
+    <circle r="3.5" fill="#f472b6">
+      <animateMotion dur="9s" begin="-5s" repeatCount="indefinite" rotate="auto">
+        <mpath href="#orbit2" />
+      </animateMotion>
+      <animate attributeName="opacity" values="0.7;1;0.7" dur="3.4s" repeatCount="indefinite" />
+    </circle>
+    <circle r="3" fill="#fde047">
+      <animateMotion dur="13s" begin="-2s" repeatCount="indefinite" rotate="auto">
+        <mpath href="#orbit1" />
+      </animateMotion>
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="2.8s" repeatCount="indefinite" />
+    </circle>
+  </g>
+
+  <path id="orbit1" d="M 760,200 A 160,160 0 1 1 759.99,200 Z" fill="none" stroke="none" />
+  <path id="orbit2" d="M 800,200 A 200,200 0 1 1 799.99,200 Z" fill="none" stroke="none" />
+
+  <path d="M 0,340 C 200,320 400,360 600,340 C 800,320 1000,360 1200,340 L 1200,360 L 0,360 Z"
+        fill="url(#accent)" opacity="0.18">
+    <animate attributeName="d"
+             values="M 0,340 C 200,320 400,360 600,340 C 800,320 1000,360 1200,340 L 1200,360 L 0,360 Z;
+                     M 0,340 C 200,360 400,320 600,340 C 800,360 1000,320 1200,340 L 1200,360 L 0,360 Z;
+                     M 0,340 C 200,320 400,360 600,340 C 800,320 1000,360 1200,340 L 1200,360 L 0,360 Z"
+             dur="8s" repeatCount="indefinite" />
+  </path>
+</svg>

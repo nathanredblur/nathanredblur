@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 460" role="img" aria-labelledby="title desc">
+  <title id="title">Currently Shipping With</title>
+  <desc id="desc">Animated orbit of the tech stack rotating around a central AI hub.</desc>
+
+  <defs>
+    <radialGradient id="hubGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#a78bfa" />
+      <stop offset="60%" stop-color="#7c3aed" />
+      <stop offset="100%" stop-color="#4c1d95" />
+    </radialGradient>
+
+    <radialGradient id="hubGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#a78bfa" stop-opacity="0.45" />
+      <stop offset="100%" stop-color="#a78bfa" stop-opacity="0" />
+    </radialGradient>
+
+    <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#a78bfa" stop-opacity="0.05" />
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="460" fill="#0b0d12" rx="16" />
+
+  <g opacity="0.5">
+    <circle cx="60"  cy="60"  r="1.2" fill="#fff">
+      <animate attributeName="opacity" values="0.2;1;0.2" dur="3.4s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="540" cy="80"  r="1.4" fill="#22d3ee">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="4.1s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="80"  cy="400" r="1.2" fill="#f472b6">
+      <animate attributeName="opacity" values="0.2;0.9;0.2" dur="3.7s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="520" cy="380" r="1.0" fill="#fde047">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="2.9s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="300" cy="40"  r="1.0" fill="#a78bfa">
+      <animate attributeName="opacity" values="0.2;1;0.2" dur="3.2s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="300" cy="430" r="1.0" fill="#22d3ee">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="4s" repeatCount="indefinite" />
+    </circle>
+  </g>
+
+  <circle cx="300" cy="230" r="120" fill="none" stroke="url(#ringGrad)" stroke-width="1" stroke-dasharray="2 6" opacity="0.7" />
+  <circle cx="300" cy="230" r="170" fill="none" stroke="url(#ringGrad)" stroke-width="1" stroke-dasharray="2 6" opacity="0.5" />
+  <circle cx="300" cy="230" r="220" fill="none" stroke="url(#ringGrad)" stroke-width="1" stroke-dasharray="2 6" opacity="0.35" />
+
+  <path id="ring1" d="M 420,230 A 120,120 0 1 1 419.99,230 Z" fill="none" stroke="none" />
+  <path id="ring2" d="M 470,230 A 170,170 0 1 1 469.99,230 Z" fill="none" stroke="none" />
+  <path id="ring3" d="M 520,230 A 220,220 0 1 1 519.99,230 Z" fill="none" stroke="none" />
+
+  <ellipse cx="300" cy="230" rx="80" ry="80" fill="url(#hubGlow)">
+    <animate attributeName="rx" values="70;90;70" dur="3.5s" repeatCount="indefinite" />
+    <animate attributeName="ry" values="70;90;70" dur="3.5s" repeatCount="indefinite" />
+  </ellipse>
+
+  <circle cx="300" cy="230" r="42" fill="url(#hubGrad)" stroke="#a78bfa" stroke-width="1.5">
+    <animate attributeName="r" values="40;44;40" dur="3.5s" repeatCount="indefinite" />
+  </circle>
+
+  <text x="300" y="225" text-anchor="middle"
+        font-family="ui-sans-serif, system-ui, sans-serif"
+        font-size="14" font-weight="800" fill="#ffffff" letter-spacing="2">AI</text>
+  <text x="300" y="244" text-anchor="middle"
+        font-family="ui-monospace, SFMono-Regular, Menlo, monospace"
+        font-size="9" fill="#e9d5ff" letter-spacing="1">+ DEV</text>
+
+  <!-- Ring 1: Frontend core -->
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" font-weight="600">
+    <g>
+      <rect x="-32" y="-13" width="64" height="26" rx="13" fill="#0f172a" stroke="#22d3ee" stroke-width="1.2" />
+      <text y="4" text-anchor="middle" fill="#22d3ee">React</text>
+      <animateMotion dur="22s" repeatCount="indefinite" rotate="0"><mpath href="#ring1" /></animateMotion>
+    </g>
+    <g>
+      <rect x="-42" y="-13" width="84" height="26" rx="13" fill="#0f172a" stroke="#3b82f6" stroke-width="1.2" />
+      <text y="4" text-anchor="middle" fill="#60a5fa">TypeScript</text>
+      <animateMotion dur="22s" begin="-7.33s" repeatCount="indefinite" rotate="0"><mpath href="#ring1" /></animateMotion>
+    </g>
+    <g>
+      <rect x="-30" y="-13" width="60" height="26" rx="13" fill="#0f172a" stroke="#a78bfa" stroke-width="1.2" />
+      <text y="4" text-anchor="middle" fill="#c4b5fd">Astro</text>
+      <animateMotion dur="22s" begin="-14.66s" repeatCount="indefinite" rotate="0"><mpath href="#ring1" /></animateMotion>
+    </g>
+  </g>
+
+  <!-- Ring 2: Tooling & UI -->
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" font-weight="600">
+    <g>
+      <rect x="-34" y="-13" width="68" height="26" rx="13" fill="#0f172a" stroke="#06b6d4" stroke-width="1.2" />
+      <text y="4" text-anchor="middle" fill="#67e8f9">Tailwind</text>
+      <animateMotion dur="28s" repeatCount="indefinite" rotate="0"><mpath href="#ring2" /></animateMotion>
+    </g>
+    <g>
+      <rect x="-28" y="-13" width="56" height="26" rx="13" fill="#0f172a" stroke="#f97316" stroke-width="1.2" />
+      <text y="4" text-anchor="middle" fill="#fdba74">Svelte</text>
+      <animateMotion dur="28s" begin="-9.33s" repeatCount="indefinite" rotate="0"><mpath href="#ring2" /></animateMotion>
+    </g>
+    <g>
+      <rect x="-32" y="-13" width="64" height="26" rx="13" fill="#0f172a" stroke="#10b981" stroke-width="1.2" />
+      <text y="4" text-anchor="middle" fill="#6ee7b7">Node.js</text>
+      <animateMotion dur="28s" begin="-18.66s" repeatCount="indefinite" rotate="0"><mpath href="#ring2" /></animateMotion>
+    </g>
+  </g>
+
+  <!-- Ring 3: AI / Edge -->
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" font-weight="600">
+    <g>
+      <rect x="-44" y="-13" width="88" height="26" rx="13" fill="#0f172a" stroke="#d4a27f" stroke-width="1.2" />
+      <text y="4" text-anchor="middle" fill="#fde68a">Claude Code</text>
+      <animateMotion dur="34s" repeatCount="indefinite" rotate="0"><mpath href="#ring3" /></animateMotion>
+    </g>
+    <g>
+      <rect x="-30" y="-13" width="60" height="26" rx="13" fill="#0f172a" stroke="#ffffff" stroke-width="1.2" />
+      <text y="4" text-anchor="middle" fill="#f1f5f9">Cursor</text>
+      <animateMotion dur="34s" begin="-11.33s" repeatCount="indefinite" rotate="0"><mpath href="#ring3" /></animateMotion>
+    </g>
+    <g>
+      <rect x="-26" y="-13" width="52" height="26" rx="13" fill="#0f172a" stroke="#f472b6" stroke-width="1.2" />
+      <text y="4" text-anchor="middle" fill="#f9a8d4">MCP</text>
+      <animateMotion dur="34s" begin="-22.66s" repeatCount="indefinite" rotate="0"><mpath href="#ring3" /></animateMotion>
+    </g>
+    <g>
+      <rect x="-36" y="-13" width="72" height="26" rx="13" fill="#0f172a" stroke="#f38020" stroke-width="1.2" />
+      <text y="4" text-anchor="middle" fill="#fdba74">Cloudflare</text>
+      <animateMotion dur="34s" begin="-26s" repeatCount="indefinite" rotate="0"><mpath href="#ring3" /></animateMotion>
+    </g>
+  </g>
+
+  <text x="300" y="425" text-anchor="middle"
+        font-family="ui-sans-serif, system-ui, sans-serif"
+        font-size="14" font-weight="700" fill="#94a3b8" letter-spacing="3">CURRENTLY SHIPPING WITH</text>
+  <line x1="180" y1="438" x2="420" y2="438" stroke="#a78bfa" stroke-width="1.5" stroke-linecap="round" opacity="0.6">
+    <animate attributeName="opacity" values="0.3;0.8;0.3" dur="3s" repeatCount="indefinite" />
+  </line>
+</svg>

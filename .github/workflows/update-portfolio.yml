@@ -1,0 +1,43 @@
+name: Sync · Projects & Posts from nathanredblur.dev
+
+on:
+  schedule:
+    # Refresh every 6 hours
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main, master]
+    paths:
+      - 'scripts/update-portfolio.mjs'
+      - '.github/workflows/update-portfolio.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  refresh-readme:
+    name: Refresh README projects + posts sections
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Refresh sections
+        run: node scripts/update-portfolio.mjs
+
+      - name: Commit changes (if any)
+        run: |
+          if [[ -n "$(git status --porcelain README.md)" ]]; then
+            git config user.name  "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add README.md
+            git commit -m "chore(readme): sync projects + posts from nathanredblur.dev"
+            git push
+          else
+            echo "README.md is already up to date — nothing to commit."
+          fi
