@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
-  <title id="title">Nathan Redblur  Senior Frontend Engineer</title>
-  <desc id="desc">Animated banner introducing Jonathan Rico (Nathan Redblur), Senior Frontend Engineer based in Medellín, Colombia.</desc>
+  <title id="title">Nathan Redblur &#8212; Senior Frontend Engineer</title>
+  <desc id="desc">Animated banner introducing Jonathan Rico (Nathan Redblur), Senior Frontend Engineer based in Medell&#237;n, Colombia.</desc>
 
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -139,7 +139,7 @@
                dur="14s" begin="2.4s" repeatCount="indefinite" />
     </text>
     <text x="600" y="262" opacity="0">
-      <tspan fill="#64748b">&gt;</tspan> Medellín, Colombia
+      <tspan fill="#64748b">&gt;</tspan> Medell&#237;n, Colombia
       <animate attributeName="opacity"
                values="0;0;0;0;0;0;0;1;1"
                keyTimes="0;0.22;0.47;0.5;0.72;0.75;0.79;0.97;1"
