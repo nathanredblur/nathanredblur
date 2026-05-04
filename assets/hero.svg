@@ -45,6 +45,10 @@
       </rect>
     </clipPath>
 
+    <clipPath id="rounded">
+      <rect x="0" y="0" width="1200" height="360" rx="16" ry="16" />
+    </clipPath>
+
     <!--
       Orbit paths centered on (600, 180) — the geometric center of the viewBox.
       A full circle requires TWO half-circle arcs (not a single near-degenerate arc):
@@ -56,6 +60,7 @@
     <path id="orbit-lg" d="M 425,180 a 175,175 0 1 1 350,0 a 175,175 0 1 1 -350,0" fill="none" />
   </defs>
 
+  <g clip-path="url(#rounded)">
   <rect width="1200" height="360" fill="url(#bg)" />
 
   <g stroke="#1f2433" stroke-width="1" opacity="0.6">
@@ -224,4 +229,9 @@
                      M 0,340 C 200,320 400,360 600,340 C 800,320 1000,360 1200,340 L 1200,360 L 0,360 Z"
              dur="8s" repeatCount="indefinite" />
   </path>
+  </g>
+
+  <!-- subtle outer border that sits on top of the clipped content -->
+  <rect x="0.5" y="0.5" width="1199" height="359" rx="15.5" ry="15.5"
+        fill="none" stroke="#1f2433" stroke-width="1" opacity="0.8" />
 </svg>
