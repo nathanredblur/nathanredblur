@@ -3,7 +3,11 @@ name: Cache · GitHub Stats SVGs
 # Downloads the GitHub Stats and Top-Languages cards from the public
 # github-readme-stats endpoint and commits them under assets/ so the
 # README is fully self-contained (no runtime dependency on the live
-# service or the personal Vercel deployment).
+# service).
+#
+# If the public endpoint is rate-limited on a given run the step
+# simply fails and the previously cached SVGs in assets/ keep
+# rendering — the next scheduled / manual run will catch up.
 
 on:
   schedule:
@@ -19,10 +23,7 @@ permissions:
   contents: write
 
 env:
-  # Try the public endpoint first; if it 503s (it gets rate-limited
-  # often) fall back to the personal Vercel deployment of the fork.
-  PRIMARY_BASE: https://github-readme-stats.vercel.app/api
-  FALLBACK_BASE: https://github-readme-stats-kw8r-nathanredblur.vercel.app/api
+  STATS_BASE: https://github-readme-stats.vercel.app/api
   STATS_QUERY: hide_border=true&bg_color=0b0d12&title_color=a78bfa&icon_color=22d3ee&text_color=cbd5e1&border_radius=16
   USERNAME: nathanredblur
 
@@ -33,34 +34,30 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Download stats overview (with fallback)
+      - name: Download stats overview
         run: |
-          set -e
           QS="username=${USERNAME}&count_private=true&show_icons=true&${STATS_QUERY}"
-          if ! curl -fsSL --retry 3 --retry-delay 5 \
-                 "${PRIMARY_BASE}?${QS}" -o assets/stats-overview.svg; then
-            echo "::warning::Primary endpoint failed — falling back to personal deployment."
-            curl -fsSL --retry 3 --retry-delay 5 \
-              "${FALLBACK_BASE}?${QS}" -o assets/stats-overview.svg
-          fi
+          curl -fsSL --retry 5 --retry-delay 10 --retry-all-errors \
+            "${STATS_BASE}?${QS}" -o assets/stats-overview.svg
 
-      - name: Download top languages (with fallback)
+      - name: Download top languages
         run: |
-          set -e
           QS="username=${USERNAME}&layout=compact&${STATS_QUERY}"
-          if ! curl -fsSL --retry 3 --retry-delay 5 \
-                 "${PRIMARY_BASE}/top-langs/?${QS}" -o assets/stats-langs.svg; then
-            echo "::warning::Primary endpoint failed — falling back to personal deployment."
-            curl -fsSL --retry 3 --retry-delay 5 \
-              "${FALLBACK_BASE}/top-langs/?${QS}" -o assets/stats-langs.svg
-          fi
+          curl -fsSL --retry 5 --retry-delay 10 --retry-all-errors \
+            "${STATS_BASE}/top-langs/?${QS}" -o assets/stats-langs.svg
 
-      - name: Sanity check (must be SVG, not an error page)
+      - name: Sanity check (must be a real SVG, not an error page)
         run: |
           for f in assets/stats-overview.svg assets/stats-langs.svg; do
             if ! head -c 200 "$f" | grep -q '<svg'; then
               echo "::error::$f does not look like an SVG file:"
               head -c 500 "$f"
+              exit 1
+            fi
+            # Vercel error pages are usually < 1KB; a real card is several KB.
+            if [[ $(wc -c <"$f") -lt 1500 ]]; then
+              echo "::error::$f is suspiciously small — probably an error response."
+              cat "$f"
               exit 1
             fi
           done
