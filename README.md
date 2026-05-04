@@ -82,8 +82,8 @@
 ### GitHub Stats
 
 <div align="center">
-  <img width="49%" src="https://github-readme-stats-kw8r-nathanredblur.vercel.app/api?username=nathanredblur&count_private=true&show_icons=true&hide_border=true&bg_color=0b0d12&title_color=a78bfa&icon_color=22d3ee&text_color=cbd5e1&border_radius=16" alt="GitHub Stats" />
-  <img width="49%" src="https://github-readme-stats-kw8r-nathanredblur.vercel.app/api/top-langs/?username=nathanredblur&layout=compact&hide_border=true&bg_color=0b0d12&title_color=a78bfa&text_color=cbd5e1&border_radius=16" alt="Top Languages" />
+  <img width="49%" src="./assets/stats-overview.svg" alt="GitHub Stats" />
+  <img width="49%" src="./assets/stats-langs.svg" alt="Top Languages" />
 </div>
 
 ---
@@ -99,7 +99,8 @@
 <!--END_SECTION:activity-->
 
 <!--
-  Sections marked START_SECTION:projects, START_SECTION:posts and START_SECTION:activity
-  are automatically refreshed by .github/workflows/update-portfolio.yml
-  and .github/workflows/update-readme.yml respectively.
+  Auto-refreshed sections + assets:
+    - START_SECTION:projects + START_SECTION:posts → .github/workflows/update-portfolio.yml (every 6h)
+    - START_SECTION:activity                       → .github/workflows/update-readme.yml    (every 30m)
+    - assets/stats-overview.svg + assets/stats-langs.svg → .github/workflows/cache-stats.yml (weekly)
 -->
