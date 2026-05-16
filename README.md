@@ -91,11 +91,11 @@
 ### Recent Activity
 
 <!--START_SECTION:activity-->
-1. 💪 Opened PR [#8](https://github.com/Cotrasoft/cotrasoft-web/pull/8) in [Cotrasoft/cotrasoft-web](https://github.com/Cotrasoft/cotrasoft-web)
-2. 🗣 Commented on [#16569](https://github.com/withastro/astro/pull/16569#issuecomment-4367658018) in [withastro/astro](https://github.com/withastro/astro)
-3. 🗣 Commented on [#439](https://github.com/expressive-code/expressive-code/issues/439#issuecomment-4362602181) in [expressive-code/expressive-code](https://github.com/expressive-code/expressive-code)
-4. 💪 Opened PR [#28](https://github.com/nathanredblur/nathanredblur.dev/pull/28) in [nathanredblur/nathanredblur.dev](https://github.com/nathanredblur/nathanredblur.dev)
-5. 💪 Opened PR [#16569](https://github.com/withastro/astro/pull/16569) in [withastro/astro](https://github.com/withastro/astro)
+1. 🎉 Merged PR [#8](https://github.com/Cotrasoft/cotrasoft-web/pull/8) in [Cotrasoft/cotrasoft-web](https://github.com/Cotrasoft/cotrasoft-web)
+2. 💪 Opened PR [#8](https://github.com/Cotrasoft/cotrasoft-web/pull/8) in [Cotrasoft/cotrasoft-web](https://github.com/Cotrasoft/cotrasoft-web)
+3. 🗣 Commented on [#16569](https://github.com/withastro/astro/pull/16569#issuecomment-4367658018) in [withastro/astro](https://github.com/withastro/astro)
+4. 🗣 Commented on [#439](https://github.com/expressive-code/expressive-code/issues/439#issuecomment-4362602181) in [expressive-code/expressive-code](https://github.com/expressive-code/expressive-code)
+5. 💪 Opened PR [#28](https://github.com/nathanredblur/nathanredblur.dev/pull/28) in [nathanredblur/nathanredblur.dev](https://github.com/nathanredblur/nathanredblur.dev)
 <!--END_SECTION:activity-->
 
 <!--
