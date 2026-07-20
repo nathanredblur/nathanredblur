@@ -39,11 +39,11 @@
 ### Latest from the Blog
 
 <!--START_SECTION:posts-->
-- **[Building a Visual Identity with Nano Banana and Gemini Gems](https://nathanredblur.dev/posts/prompt-engineering-nano-banana-frutiger-aero/)** — How I brought Frutiger Aero and Solarpunk aesthetics to my blog using AI image generation and Gemini Gems <sub>· 2026-02-01</sub>
+- **[How I Turned My Mac Mini Into a Home Server with Portless](https://nathanredblur.dev/posts/portless-local-domains/)** — From nginx reverse proxies to simple HTTPS local domains in minutes. Here's how Portless transformed my Mac mini server setup. <sub>· 2026-05-30</sub>
+- **[Building a Visual Identity with Nano Banana and Opal](https://nathanredblur.dev/posts/prompt-engineering-nano-banana-frutiger-aero/)** — How I brought Frutiger Aero and Solarpunk aesthetics to my blog using AI image generation and Opal <sub>· 2026-02-01</sub>
 - **[My Hybrid CSS Approach: Tailwind + Native CSS](https://nathanredblur.dev/posts/my-hybrid-css-approach-tailwind-native-css/)** — I used to hate Tailwind. Now I use it for 80% of my styling—but native CSS handles the rest. Here's why this hybrid approach works. <sub>· 2026-01-29</sub>
 - **[Why I Hate Using StyleX at Work](https://nathanredblur.dev/posts/why-i-hate-using-stylex-at-work/)** — I use StyleX daily at my job. Here's why I think it's over-engineered for 99% of projects—and what I look for in CSS tools instead. <sub>· 2026-01-29</sub>
 - **[Modern CSS Features You Should Be Using in 2026](https://nathanredblur.dev/posts/modern-css-features-2026/)** — Native nesting, @scope, container queries, @property—CSS has evolved dramatically. Here's what you need to know. <sub>· 2026-01-29</sub>
-- **[How I Archive Videos and Images from Any Website](https://nathanredblur.dev/posts/how-i-archive-videos-and-images/)** — My personal toolkit for downloading courses, videos, and image galleries using yt-dlp and gallery-dl — including the browser cookie trick that finally made everything work. <sub>· 2026-01-07</sub>
 <!--END_SECTION:posts-->
 
 → [Read more on nathanredblur.dev/blog](https://nathanredblur.dev/blog)
