@@ -92,9 +92,9 @@
 ### Recent Activity
 
 <!--START_SECTION:activity-->
-1. 💪 Opened PR [#36](https://github.com/nathanredblur/nathanredblur.dev/pull/36) in [nathanredblur/nathanredblur.dev](https://github.com/nathanredblur/nathanredblur.dev)
-2. 🗣 Commented on [#256](https://github.com/Comfy-Themes/Spicetify/issues/256#issuecomment-4848480892) in [Comfy-Themes/Spicetify](https://github.com/Comfy-Themes/Spicetify)
-3. 💪 Opened PR [#8](https://github.com/Cotrasoft/cotrasoft-web/pull/8) in [Cotrasoft/cotrasoft-web](https://github.com/Cotrasoft/cotrasoft-web)
+1. ❗ Opened issue [#366](https://github.com/dangwu/Octal/issues/366) in [dangwu/Octal](https://github.com/dangwu/Octal)
+2. 💪 Opened PR [#36](https://github.com/nathanredblur/nathanredblur.dev/pull/36) in [nathanredblur/nathanredblur.dev](https://github.com/nathanredblur/nathanredblur.dev)
+3. 🗣 Commented on [#256](https://github.com/Comfy-Themes/Spicetify/issues/256#issuecomment-4848480892) in [Comfy-Themes/Spicetify](https://github.com/Comfy-Themes/Spicetify)
 4. 🗣 Commented on [#439](https://github.com/expressive-code/expressive-code/issues/439#issuecomment-4362602181) in [expressive-code/expressive-code](https://github.com/expressive-code/expressive-code)
 5. 💪 Opened PR [#28](https://github.com/nathanredblur/nathanredblur.dev/pull/28) in [nathanredblur/nathanredblur.dev](https://github.com/nathanredblur/nathanredblur.dev)
 <!--END_SECTION:activity-->
