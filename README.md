@@ -92,11 +92,11 @@
 ### Recent Activity
 
 <!--START_SECTION:activity-->
-1. ❌ Closed PR [#34](https://github.com/nathanredblur/nathanredblur.dev/pull/34) in [nathanredblur/nathanredblur.dev](https://github.com/nathanredblur/nathanredblur.dev)
-2. 🎉 Merged PR [#36](https://github.com/nathanredblur/nathanredblur.dev/pull/36) in [nathanredblur/nathanredblur.dev](https://github.com/nathanredblur/nathanredblur.dev)
-3. 🗣 Commented on [#366](https://github.com/dangwu/Octal/issues/366#issuecomment-5060417088) in [dangwu/Octal](https://github.com/dangwu/Octal)
-4. 🔒 Closed issue [#366](https://github.com/dangwu/Octal/issues/366) in [dangwu/Octal](https://github.com/dangwu/Octal)
-5. ❗ Opened issue [#366](https://github.com/dangwu/Octal/issues/366) in [dangwu/Octal](https://github.com/dangwu/Octal)
+1. 💪 Opened PR [#14](https://github.com/Cotrasoft/cotrasoft-web/pull/14) in [Cotrasoft/cotrasoft-web](https://github.com/Cotrasoft/cotrasoft-web)
+2. ❌ Closed PR [#34](https://github.com/nathanredblur/nathanredblur.dev/pull/34) in [nathanredblur/nathanredblur.dev](https://github.com/nathanredblur/nathanredblur.dev)
+3. 🎉 Merged PR [#36](https://github.com/nathanredblur/nathanredblur.dev/pull/36) in [nathanredblur/nathanredblur.dev](https://github.com/nathanredblur/nathanredblur.dev)
+4. 🗣 Commented on [#366](https://github.com/dangwu/Octal/issues/366#issuecomment-5060417088) in [dangwu/Octal](https://github.com/dangwu/Octal)
+5. 🔒 Closed issue [#366](https://github.com/dangwu/Octal/issues/366) in [dangwu/Octal](https://github.com/dangwu/Octal)
 <!--END_SECTION:activity-->
 
 <!--
