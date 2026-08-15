@@ -92,11 +92,11 @@
 ### Recent Activity
 
 <!--START_SECTION:activity-->
-1. 🗣 Commented on [#366](https://github.com/dangwu/Octal/issues/366#issuecomment-5060417088) in [dangwu/Octal](https://github.com/dangwu/Octal)
-2. 🔒 Closed issue [#366](https://github.com/dangwu/Octal/issues/366) in [dangwu/Octal](https://github.com/dangwu/Octal)
-3. ❗ Opened issue [#366](https://github.com/dangwu/Octal/issues/366) in [dangwu/Octal](https://github.com/dangwu/Octal)
-4. 💪 Opened PR [#36](https://github.com/nathanredblur/nathanredblur.dev/pull/36) in [nathanredblur/nathanredblur.dev](https://github.com/nathanredblur/nathanredblur.dev)
-5. 🗣 Commented on [#256](https://github.com/Comfy-Themes/Spicetify/issues/256#issuecomment-4848480892) in [Comfy-Themes/Spicetify](https://github.com/Comfy-Themes/Spicetify)
+1. 🎉 Merged PR [#36](https://github.com/nathanredblur/nathanredblur.dev/pull/36) in [nathanredblur/nathanredblur.dev](https://github.com/nathanredblur/nathanredblur.dev)
+2. 🗣 Commented on [#366](https://github.com/dangwu/Octal/issues/366#issuecomment-5060417088) in [dangwu/Octal](https://github.com/dangwu/Octal)
+3. 🔒 Closed issue [#366](https://github.com/dangwu/Octal/issues/366) in [dangwu/Octal](https://github.com/dangwu/Octal)
+4. ❗ Opened issue [#366](https://github.com/dangwu/Octal/issues/366) in [dangwu/Octal](https://github.com/dangwu/Octal)
+5. 💪 Opened PR [#36](https://github.com/nathanredblur/nathanredblur.dev/pull/36) in [nathanredblur/nathanredblur.dev](https://github.com/nathanredblur/nathanredblur.dev)
 <!--END_SECTION:activity-->
 
 <!--
