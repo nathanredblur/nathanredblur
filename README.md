@@ -40,11 +40,11 @@
 ### Latest from the Blog
 
 <!--START_SECTION:posts-->
-- **[How I Turned My Mac Mini Into a Home Server with Portless](https://nathanredblur.dev/posts/portless-local-domains/)** — From nginx reverse proxies to simple HTTPS local domains in minutes. Here's how Portless transformed my Mac mini server setup. <sub>· 2026-05-30</sub>
-- **[Building a Visual Identity with Nano Banana and Opal](https://nathanredblur.dev/posts/prompt-engineering-nano-banana-frutiger-aero/)** — How I brought Frutiger Aero and Solarpunk aesthetics to my blog using AI image generation and Opal <sub>· 2026-02-01</sub>
-- **[My Hybrid CSS Approach: Tailwind + Native CSS](https://nathanredblur.dev/posts/my-hybrid-css-approach-tailwind-native-css/)** — I used to hate Tailwind. Now I use it for 80% of my styling—but native CSS handles the rest. Here's why this hybrid approach works. <sub>· 2026-01-29</sub>
-- **[Modern CSS Features You Should Be Using in 2026](https://nathanredblur.dev/posts/modern-css-features-2026/)** — Native nesting, @scope, container queries, @property—CSS has evolved dramatically. Here's what you need to know. <sub>· 2026-01-29</sub>
-- **[Why I Hate Using StyleX at Work](https://nathanredblur.dev/posts/why-i-hate-using-stylex-at-work/)** — I use StyleX daily at my job. Here's why I think it's over-engineered for 99% of projects—and what I look for in CSS tools instead. <sub>· 2026-01-29</sub>
+- **[Why Developer Experience Deserves More Attention](https://nathanredblur.dev/posts/why-developer-experience-matters/)** — Developer experience is a real lever most teams underinvest in. The friction is small each time and invisible on any roadmap, which is exactly why it never gets fixed. <sub>· 2026-08-15</sub>
+- **[Building an In-App DevTools Panel](https://nathanredblur.dev/posts/in-app-devtools-panel/)** — The frontend is local, but the state that drives it is remote. Here's the friction that creates, and the panel I built to get cheap control over it. <sub>· 2026-08-14</sub>
+- **[What workon Does, and How It Helps My Day](https://nathanredblur.dev/posts/what-workon-does/)** — A look at workon, my Claude Code plugin that carries a ticket to a merge request, what it runs, what it refuses to do, and how it changes my day. <sub>· 2026-08-13</sub>
+- **[How to Build Good AI Skills](https://nathanredblur.dev/posts/how-to-build-ai-skills/)** — What I learned building skills for an AI coding harness: where the boundary between a skill and a script goes, why the description has a budget, and how to make one fire only when you ask. <sub>· 2026-08-12</sub>
+- **[Your AI Writes the Code. You Do Everything Else.](https://nathanredblur.dev/posts/ai-writes-code-you-do-everything-else/)** — My AI assistant is genuinely good at one thing: writing the code in front of it. Everything wrapped around that is still mine, and that turned out to be most of the job. <sub>· 2026-08-10</sub>
 <!--END_SECTION:posts-->
 
 → [Read more on nathanredblur.dev/blog](https://nathanredblur.dev/blog)
