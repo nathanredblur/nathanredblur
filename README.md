@@ -92,7 +92,7 @@
 ### Recent Activity
 
 <!--START_SECTION:activity-->
-1. 💪 Opened PR [#36](https://github.com/Cotrasoft/cotrasoft-web/pull/36) in [Cotrasoft/cotrasoft-web](https://github.com/Cotrasoft/cotrasoft-web)
+1. ❗ Opened issue [#448](https://github.com/jub0t/Concat/issues/448) in [jub0t/Concat](https://github.com/jub0t/Concat)
 2. 💪 Opened PR [#35](https://github.com/Cotrasoft/cotrasoft-web/pull/35) in [Cotrasoft/cotrasoft-web](https://github.com/Cotrasoft/cotrasoft-web)
 3. 🎉 Merged PR [#31](https://github.com/Cotrasoft/cotrasoft-web/pull/31) in [Cotrasoft/cotrasoft-web](https://github.com/Cotrasoft/cotrasoft-web)
 4. 💪 Opened PR [#31](https://github.com/Cotrasoft/cotrasoft-web/pull/31) in [Cotrasoft/cotrasoft-web](https://github.com/Cotrasoft/cotrasoft-web)
