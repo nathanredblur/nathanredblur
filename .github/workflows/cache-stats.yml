@@ -1,13 +1,8 @@
 name: Cache · GitHub Stats SVGs
 
-# Downloads the GitHub Stats and Top-Languages cards from the public
-# github-readme-stats endpoint and commits them under assets/ so the
-# README is fully self-contained (no runtime dependency on the live
-# service).
-#
-# If the public endpoint is rate-limited on a given run the step
-# simply fails and the previously cached SVGs in assets/ keep
-# rendering — the next scheduled / manual run will catch up.
+# Renders the GitHub Stats and Top-Languages cards from the GitHub
+# GraphQL API (scripts/stats-cards.mjs) and commits them under assets/
+# so the README is fully self-contained (no third-party stats service).
 
 on:
   schedule:
@@ -16,16 +11,12 @@ on:
   push:
     branches: [main]
     paths:
+      - 'scripts/stats-cards.mjs'
       - '.github/workflows/cache-stats.yml'
   workflow_dispatch:
 
 permissions:
   contents: write
-
-env:
-  STATS_BASE: https://github-readme-stats.vercel.app/api
-  STATS_QUERY: hide_border=true&bg_color=0b0d12&title_color=a78bfa&icon_color=22d3ee&text_color=cbd5e1&border_radius=16
-  USERNAME: nathanredblur
 
 jobs:
   cache:
@@ -34,33 +25,15 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Download stats overview
-        run: |
-          QS="username=${USERNAME}&count_private=true&show_icons=true&${STATS_QUERY}"
-          curl -fsSL --retry 5 --retry-delay 10 --retry-all-errors \
-            "${STATS_BASE}?${QS}" -o assets/stats-overview.svg
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
 
-      - name: Download top languages
-        run: |
-          QS="username=${USERNAME}&layout=compact&${STATS_QUERY}"
-          curl -fsSL --retry 5 --retry-delay 10 --retry-all-errors \
-            "${STATS_BASE}/top-langs/?${QS}" -o assets/stats-langs.svg
-
-      - name: Sanity check (must be a real SVG, not an error page)
-        run: |
-          for f in assets/stats-overview.svg assets/stats-langs.svg; do
-            if ! head -c 200 "$f" | grep -q '<svg'; then
-              echo "::error::$f does not look like an SVG file:"
-              head -c 500 "$f"
-              exit 1
-            fi
-            # Vercel error pages are usually < 1KB; a real card is several KB.
-            if [[ $(wc -c <"$f") -lt 1500 ]]; then
-              echo "::error::$f is suspiciously small — probably an error response."
-              cat "$f"
-              exit 1
-            fi
-          done
+      - name: Render stats cards
+        run: node scripts/stats-cards.mjs
+        env:
+          GH_TOKEN: ${{ github.token }}
 
       - name: Commit changes (if any)
         run: |
