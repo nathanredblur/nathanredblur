@@ -1,6 +1,6 @@
 <svg width="467" height="195" viewBox="0 0 467 195" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="titleId descId">
   <title id="titleId">Most Used Languages</title>
-  <desc id="descId">HTML 44.44%, TypeScript 34.63%, JavaScript 13.36%, Astro 3.44%, Shell 2.53%, CSS 1.59%</desc>
+  <desc id="descId">TypeScript 55.88%, JavaScript 19.03%, HTML 12.45%, Astro 5.70%, Shell 4.63%, CSS 2.31%</desc>
   <style>
     .header { font: 600 18px 'Segoe UI', Ubuntu, 'Helvetica Neue', Sans-Serif; fill: #a78bfa; }
     .stat { font: 600 14px 'Segoe UI', Ubuntu, 'Helvetica Neue', Sans-Serif; fill: #cbd5e1; }
@@ -10,31 +10,31 @@
   <rect width="467" height="195" rx="16" fill="#0b0d12"/>
   <text x="25" y="35" class="header">Most Used Languages</text>
   <mask id="bar"><rect width="417" height="8" rx="4" fill="white"/></mask>
-  <g transform="translate(25, 60)" mask="url(#bar)"><rect x="0.00" width="185.30" height="8" fill="#e34c26"/><rect x="185.30" width="144.43" height="8" fill="#3178c6"/><rect x="329.72" width="55.73" height="8" fill="#f1e05a"/><rect x="385.45" width="14.35" height="8" fill="#ff5a03"/><rect x="399.81" width="10.57" height="8" fill="#89e051"/><rect x="410.37" width="6.63" height="8" fill="#663399"/></g>
+  <g transform="translate(25, 60)" mask="url(#bar)"><rect x="0.00" width="233.03" height="8" fill="#3178c6"/><rect x="233.03" width="79.36" height="8" fill="#f1e05a"/><rect x="312.39" width="51.90" height="8" fill="#e34c26"/><rect x="364.29" width="23.77" height="8" fill="#ff5a03"/><rect x="388.05" width="19.30" height="8" fill="#89e051"/><rect x="407.35" width="9.65" height="8" fill="#663399"/></g>
   <g transform="translate(25, 105)">
     <g transform="translate(0, 0)">
-      <circle cx="5" cy="-4" r="5" fill="#e34c26"/>
-      <text x="16" class="lang">HTML 44.44%</text>
+      <circle cx="5" cy="-4" r="5" fill="#3178c6"/>
+      <text x="16" class="lang">TypeScript 55.88%</text>
     </g>
     <g transform="translate(210, 0)">
-      <circle cx="5" cy="-4" r="5" fill="#3178c6"/>
-      <text x="16" class="lang">TypeScript 34.63%</text>
+      <circle cx="5" cy="-4" r="5" fill="#f1e05a"/>
+      <text x="16" class="lang">JavaScript 19.03%</text>
     </g>
     <g transform="translate(0, 30)">
-      <circle cx="5" cy="-4" r="5" fill="#f1e05a"/>
-      <text x="16" class="lang">JavaScript 13.36%</text>
+      <circle cx="5" cy="-4" r="5" fill="#e34c26"/>
+      <text x="16" class="lang">HTML 12.45%</text>
     </g>
     <g transform="translate(210, 30)">
       <circle cx="5" cy="-4" r="5" fill="#ff5a03"/>
-      <text x="16" class="lang">Astro 3.44%</text>
+      <text x="16" class="lang">Astro 5.70%</text>
     </g>
     <g transform="translate(0, 60)">
       <circle cx="5" cy="-4" r="5" fill="#89e051"/>
-      <text x="16" class="lang">Shell 2.53%</text>
+      <text x="16" class="lang">Shell 4.63%</text>
     </g>
     <g transform="translate(210, 60)">
       <circle cx="5" cy="-4" r="5" fill="#663399"/>
-      <text x="16" class="lang">CSS 1.59%</text>
+      <text x="16" class="lang">CSS 2.31%</text>
     </g>
   </g>
 </svg>
